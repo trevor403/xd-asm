@@ -1,0 +1,25 @@
+# metadata: {"startAddress": "0x80150250", "size": 72, "inst": 18, "name": "FUN_80150250", "endAddress": "0x80150297"}
+
+#include "def.h"
+
+### Function: undefined FUN_80150250(void)
+.global FUN_80150250
+FUN_80150250:	# 0x80150250 - 0x80150297
+    stwu r1,-0x20(r1)	# stack
+    mfspr r0,LR
+    mr r5,r3
+    stw r0,0x24(r1)	# stack
+    addi r3,r1,0xc
+    stw r31,0x1c(r1)	# stack
+    mr r31,r4
+    addi r4,r1,0x8
+    bl FUN_801520f4
+    lwz r3,0xc(r1)	# stack
+    mr r5,r31
+    lwz r4,0x8(r1)	# stack
+    bl FUN_8029dec0
+    lwz r0,0x24(r1)	# stack
+    lwz r31,0x1c(r1)	# stack
+    mtspr LR,r0
+    addi r1,r1,0x20
+    blr

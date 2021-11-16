@@ -1,0 +1,21 @@
+# metadata: {"startAddress": "0x80028aa0", "size": 56, "inst": 14, "name": "FUN_80028aa0", "endAddress": "0x80028ad7"}
+
+#include "def.h"
+
+### Function: undefined FUN_80028aa0(void)
+.global FUN_80028aa0
+FUN_80028aa0:	# 0x80028aa0 - 0x80028ad7
+    rlwinm r5,r3,0x0,0x1c,0x1f
+    rlwinm r0,r3,0x1c,0x1c,0x1f
+    stb r5,0x0(r4)
+    rlwinm r7,r3,0x18,0x1c,0x1f
+    rlwinm r6,r3,0x14,0x1c,0x1f
+    rlwinm r5,r3,0x10,0x1c,0x1f
+    stb r0,0x1(r4)
+    rlwinm r0,r3,0xc,0x1c,0x1f
+    li r3,0x0
+    stb r7,0x2(r4)
+    stb r6,0x3(r4)
+    stb r5,0x4(r4)
+    stb r0,0x5(r4)
+    blr

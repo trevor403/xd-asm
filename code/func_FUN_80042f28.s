@@ -1,0 +1,117 @@
+# metadata: {"startAddress": "0x80042f28", "size": 400, "inst": 100, "name": "FUN_80042f28", "endAddress": "0x800430b7"}
+
+#include "def.h"
+
+### Function: undefined FUN_80042f28(void)
+.global FUN_80042f28
+FUN_80042f28:	# 0x80042f28 - 0x800430b7
+    stwu r1,-0x20(r1)	# stack
+    mfspr r0,LR
+    stw r0,0x24(r1)	# stack
+    stmw r27,0xc(r1)	# stack
+    mr r27,r3
+    lwz r28,0x68(r27)
+    bl FUN_80116a80
+    lbz r0,0x0(r28)
+    lwz r31,0x8(r28)
+    cmplwi r0,0x0
+    bne LAB_80042f5c
+    li r3,0x0
+    b LAB_800430a4
+LAB_80042f5c:
+    bl FUN_801d0140
+    lha r4,0x2(r31)
+    mr r30,r3
+    lha r0,0x0(r31)
+    li r29,0x5
+    add r0,r4,r0
+    extsh r28,r0
+    bl FUN_80116a18
+    cmpwi r30,0x5
+    bge LAB_80042f88
+    mr r29,r30
+LAB_80042f88:
+    rlwinm r3,r3,0x0,0x10,0x1f
+    rlwinm r0,r3,0x0,0x1f,0x1f
+    cmpwi r0,0x0
+    beq LAB_80042fc4
+    lha r3,0x2(r31)
+    lha r0,0x0(r31)
+    add r0,r3,r0
+    cmpwi r0,0x0
+    beq LAB_80042fb4
+    li r3,0x450
+    bl FUN_80185154
+LAB_80042fb4:
+    lha r3,0x2(r31)
+    subi r0,r3,0x1
+    sth r0,0x2(r31)
+    b LAB_80042ffc
+LAB_80042fc4:
+    rlwinm r0,r3,0x0,0x1e,0x1e
+    cmpwi r0,0x0
+    beq LAB_80042ffc
+    lha r3,0x2(r31)
+    subi r4,r30,0x1
+    lha r0,0x0(r31)
+    add r0,r3,r0
+    cmpw r4,r0
+    beq LAB_80042ff0
+    li r3,0x450
+    bl FUN_80185154
+LAB_80042ff0:
+    lha r3,0x2(r31)
+    addi r0,r3,0x1
+    sth r0,0x2(r31)
+LAB_80042ffc:
+    lha r5,0x2(r31)
+    cmpwi r5,0x0
+    bge LAB_80043034
+    lha r0,0x0(r31)
+    li r3,0x0
+    add r0,r0,r5
+    sth r0,0x0(r31)
+    sth r3,0x2(r31)
+    lha r0,0x0(r31)
+    cmpwi r0,0x0
+    bge LAB_80043080
+    sth r3,0x0(r31)
+    sth r3,0x2(r31)
+    b LAB_80043080
+LAB_80043034:
+    cmpw r5,r29
+    blt LAB_80043080
+    subi r3,r29,0x1
+    lha r4,0x0(r31)
+    subf r0,r3,r5
+    add r0,r4,r0
+    extsb r4,r3
+    extsh r0,r0
+    sth r0,0x0(r31)
+    sth r4,0x2(r31)
+    lha r3,0x0(r31)
+    lha r0,0x2(r31)
+    add r0,r3,r0
+    cmpw r0,r30
+    blt LAB_80043080
+    subf r0,r29,r30
+    sth r4,0x2(r31)
+    extsb r0,r0
+    sth r0,0x0(r31)
+LAB_80043080:
+    lha r3,0x2(r31)
+    lha r0,0x0(r31)
+    add r0,r3,r0
+    cmpw r28,r0
+    beq LAB_800430a0
+    lwz r3,0x4(r27)
+    li r4,0x1
+    bl FUN_8010fca0
+LAB_800430a0:
+    li r3,0x0
+LAB_800430a4:
+    lmw r27,0xc(r1)	# stack
+    lwz r0,0x24(r1)	# stack
+    mtspr LR,r0
+    addi r1,r1,0x20
+    blr

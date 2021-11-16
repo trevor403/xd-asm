@@ -1,0 +1,295 @@
+# metadata: {"startAddress": "0x802266f4", "size": 1088, "inst": 272, "name": "FUN_802266f4", "endAddress": "0x80226b33"}
+
+#include "def.h"
+
+### Function: undefined FUN_802266f4(void)
+.global FUN_802266f4
+FUN_802266f4:	# 0x802266f4 - 0x80226b33
+    stwu r1,-0x20(r1)	# stack
+    mfspr r0,LR
+    stw r0,0x24(r1)	# stack
+    stmw r29,0x14(r1)	# stack
+    mr r30,r3
+    mr r29,r4
+    li r3,0x0
+    bl FUN_801f7854
+    cmplwi r30,0x0
+    rlwinm r31,r3,0x0,0x18,0x1f
+    bne LAB_80226728
+    li r3,0x0
+    b LAB_80226b20
+LAB_80226728:
+    mr r3,r30
+    bl FUN_80204a70
+    rlwinm. r0,r3,0x0,0x18,0x1f
+    bne LAB_80226740
+    li r3,0x0
+    b LAB_80226b20
+LAB_80226740:
+    mr r3,r30
+    bl FUN_80203f20
+    rlwinm. r0,r3,0x0,0x18,0x1f
+    bne LAB_80226758
+    li r3,0x0
+    b LAB_80226b20
+LAB_80226758:
+    li r3,0x0
+    bl FUN_801f6fcc
+    rlwinm. r0,r3,0x0,0x18,0x1f
+    bne LAB_80226770
+    li r3,0x0
+    b LAB_80226b20
+LAB_80226770:
+    mr r3,r30
+    bl FUN_8020489c
+    bl FUN_8013efec
+    rlwinm. r0,r3,0x0,0x18,0x1f
+    bne LAB_8022678c
+    li r3,0x0
+    b LAB_80226b20
+LAB_8022678c:
+    mr r3,r30
+    bl FUN_80148a80
+    rlwinm. r0,r29,0x0,0x18,0x1f
+    bne LAB_802268f8
+    mr r3,r30
+    li r4,0x3e
+    bl FUN_802025f0
+    rlwinm r0,r3,0x0,0x18,0x1f
+    cmplwi r0,0x1
+    bne LAB_802267bc
+    li r3,0x0
+    b LAB_80226b20
+LAB_802267bc:
+    mr r3,r30
+    li r4,0x8
+    bl FUN_802025f0
+    rlwinm r0,r3,0x0,0x18,0x1f
+    cmplwi r0,0x1
+    bne LAB_802267dc
+    li r3,0x0
+    b LAB_80226b20
+LAB_802267dc:
+    mr r3,r30
+    bl FUN_8020489c
+    bl FUN_8013ead4
+    mr r29,r3
+    mr r3,r30
+    bl FUN_80148d64
+    bl FUN_8025ca08
+    rlwinm r5,r3,0x0,0x10,0x1f
+    li r4,0x64
+    divw r3,r5,r4
+    rlwinm r0,r29,0x0,0x18,0x1f
+    mullw r3,r3,r4
+    subf r3,r3,r5
+    cmpw r3,r0
+    bge LAB_802268f0
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x0
+    bl FUN_80205c9c
+    li r3,0x0
+    bl FUN_801f7d44
+    mr r29,r3
+    mr r4,r30
+    li r3,0x0
+    bl FUN_801f6cc8
+    mr r3,r30
+    li r4,0x3e
+    bl FUN_8020254c
+    rlwinm r0,r3,0x0,0x18,0x1f
+    cmplwi r0,0x2
+    bne LAB_8022686c
+    mr r3,r30
+    li r4,0x3e
+    li r5,0x0
+    bl FUN_802024a4
+LAB_8022686c:
+    mr r3,r30
+    li r4,0xc8
+    bl FUN_8022b1a4
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x1
+    bl FUN_80205c9c
+    mr r3,r30
+    mr r4,r31
+    li r5,0x1
+    bl FUN_80239038
+    li r3,0x4fe2
+    bl FUN_80237264
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x2
+    bl FUN_80205c9c
+    bl FUN_80237188
+    mr r3,r30
+    mr r4,r31
+    li r5,0x0
+    bl FUN_80238fb8
+    mr r4,r29
+    li r3,0x0
+    bl FUN_801f6cc8
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x3
+    bl FUN_80205c9c
+    b LAB_80226b1c
+LAB_802268f0:
+    li r3,0x0
+    b LAB_80226b20
+LAB_802268f8:
+    cmplwi r0,0x1
+    bne LAB_802269d8
+    mr r3,r30
+    li r4,0x3e
+    bl FUN_802025f0
+    rlwinm. r0,r3,0x0,0x18,0x1f
+    bne LAB_8022691c
+    li r3,0x0
+    b LAB_80226b20
+LAB_8022691c:
+    mr r3,r30
+    li r4,0x0
+    li r5,0x2
+    li r6,0x0
+    bl FUN_80205c9c
+    li r3,0x0
+    bl FUN_801f7d44
+    mr r29,r3
+    mr r4,r30
+    li r3,0x0
+    bl FUN_801f6cc8
+    mr r3,r30
+    li r4,0x0
+    li r5,0x2
+    li r6,0x1
+    bl FUN_80205c9c
+    mr r3,r30
+    mr r4,r31
+    li r5,0x1
+    bl FUN_8023910c
+    mr r4,r30
+    mr r5,r31
+    li r3,0x0
+    li r6,0x0
+    li r7,0x1
+    bl FUN_80238ef8
+    li r3,0x4fe3
+    bl FUN_80237264
+    mr r3,r30
+    li r4,0x0
+    li r5,0x2
+    li r6,0x2
+    bl FUN_80205c9c
+    bl FUN_80237188
+    mr r3,r30
+    mr r4,r31
+    li r5,0x0
+    bl FUN_80238fb8
+    mr r4,r29
+    li r3,0x0
+    bl FUN_801f6cc8
+    mr r3,r30
+    li r4,0x0
+    li r5,0x2
+    li r6,0x3
+    bl FUN_80205c9c
+    b LAB_80226b1c
+LAB_802269d8:
+    cmplwi r0,0x2
+    bne LAB_80226b1c
+    mr r3,r30
+    li r4,0x3e
+    bl FUN_802025f0
+    rlwinm. r0,r3,0x0,0x18,0x1f
+    bne LAB_802269fc
+    li r3,0x0
+    b LAB_80226b20
+LAB_802269fc:
+    bl FUN_8025ca08
+    rlwinm r4,r3,0x0,0x10,0x1f
+    rlwinm r0,r3,0x18,0x0,0x7
+    rlwinm r3,r4,0x1,0x1f,0x1f
+    subf r0,r3,r0
+    rlwinm r0,r0,0x8,0x0,0x1f
+    add. r0,r0,r3
+    beq LAB_80226a24
+    li r3,0x0
+    b LAB_80226b20
+LAB_80226a24:
+    mr r3,r30
+    li r4,0x8
+    bl FUN_802025f0
+    rlwinm r0,r3,0x0,0x18,0x1f
+    cmplwi r0,0x1
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x0
+    li r7,0x0
+    li r8,0x0
+    bl FUN_8020590c
+    li r3,0x0
+    bl FUN_801f7d44
+    mr r29,r3
+    mr r4,r30
+    li r3,0x0
+    bl FUN_801f6cc8
+    mr r3,r30
+    li r4,0x3e
+    bl FUN_802026a0
+    mr r3,r30
+    li r4,0x8
+    bl FUN_802026a0
+    mr r3,r30
+    li r4,0x17
+    bl FUN_802026a0
+    mr r3,r30
+    li r4,0xc8
+    bl FUN_8022b1a4
+    mr r3,r30
+    li r4,0x7c
+    bl FUN_8022b1a4
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x0
+    li r7,0x4fd7
+    li r8,0x1
+    bl FUN_8020590c
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x0
+    li r7,0x0
+    li r8,0x2
+    bl FUN_8020590c
+    bl FUN_80237188
+    mr r3,r30
+    mr r4,r31
+    li r5,0x0
+    bl FUN_80238fb8
+    mr r4,r29
+    li r3,0x0
+    bl FUN_801f6cc8
+    mr r3,r30
+    li r4,0x1
+    li r5,0x1
+    li r6,0x0
+    li r7,0x0
+    li r8,0x3
+    bl FUN_8020590c
+LAB_80226b1c:
+    li r3,0x1
+LAB_80226b20:
+    lmw r29,0x14(r1)	# stack
+    lwz r0,0x24(r1)	# stack
+    mtspr LR,r0
+    addi r1,r1,0x20
+    blr

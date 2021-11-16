@@ -1,0 +1,11 @@
+# metadata: {"startAddress": "0x801455a4", "size": 16, "inst": 4, "name": "FUN_801455a4", "endAddress": "0x801455b3"}
+
+#include "def.h"
+
+### Function: undefined FUN_801455a4(void)
+.global FUN_801455a4
+FUN_801455a4:	# 0x801455a4 - 0x801455b3
+    cmplwi r3,0x0
+    beqlr
+    sth r4,0x2(r3)
+    blr

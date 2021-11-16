@@ -1,0 +1,91 @@
+# metadata: {"startAddress": "0x8002d1bc", "size": 328, "inst": 82, "name": "FUN_8002d1bc", "endAddress": "0x8002d303"}
+
+#include "def.h"
+
+### Function: undefined FUN_8002d1bc(void)
+.global FUN_8002d1bc
+FUN_8002d1bc:	# 0x8002d1bc - 0x8002d303
+    lbz r0,0x0(r4)
+    li r6,0xa0
+    cmpwi r6,0xbd
+    li r7,0xe7
+    stb r0,0xac(r3)
+    lbz r0,0x1(r4)
+    stb r0,0xad(r3)
+    lbz r0,0x2(r4)
+    stb r0,0xae(r3)
+    lbz r0,0x3(r4)
+    stb r0,0xaf(r3)
+    bge LAB_8002d2f8
+    lbz r5,0xa0(r3)
+    li r6,0xbc
+    lbz r4,0xa1(r3)
+    subfic r7,r5,0xe7
+    lbz r0,0xa2(r3)
+    subf r7,r4,r7
+    lbz r4,0xa3(r3)
+    subf r7,r0,r7
+    lbz r0,0xa4(r3)
+    subf r7,r4,r7
+    lbz r4,0xa5(r3)
+    subf r7,r0,r7
+    lbz r0,0xa6(r3)
+    subf r7,r4,r7
+    lbz r5,0xa7(r3)
+    subf r7,r0,r7
+    lbz r4,0xa8(r3)
+    subf r7,r5,r7
+    lbz r0,0xa9(r3)
+    subf r7,r4,r7
+    lbz r4,0xaa(r3)
+    subf r7,r0,r7
+    lbz r0,0xab(r3)
+    subf r7,r4,r7
+    lbz r4,0xac(r3)
+    subf r7,r0,r7
+    lbz r0,0xad(r3)
+    subf r7,r4,r7
+    lbz r5,0xae(r3)
+    subf r7,r0,r7
+    lbz r4,0xaf(r3)
+    subf r7,r5,r7
+    lbz r0,0xb0(r3)
+    subf r7,r4,r7
+    lbz r4,0xb1(r3)
+    subf r7,r0,r7
+    lbz r0,0xb2(r3)
+    subf r7,r4,r7
+    lbz r4,0xb3(r3)
+    subf r7,r0,r7
+    lbz r0,0xb4(r3)
+    subf r7,r4,r7
+    lbz r5,0xb5(r3)
+    subf r7,r0,r7
+    lbz r4,0xb6(r3)
+    subf r7,r5,r7
+    lbz r0,0xb7(r3)
+    subf r7,r4,r7
+    lbz r4,0xb8(r3)
+    subf r7,r0,r7
+    lbz r0,0xb9(r3)
+    subf r7,r4,r7
+    lbz r4,0xba(r3)
+    subf r7,r0,r7
+    lbz r0,0xbb(r3)
+    subf r7,r4,r7
+    subf r7,r0,r7
+    subfic r0,r6,0xbd
+    addi r4,r3,0xbc
+    mtspr CTR,r0
+    cmpwi r6,0xbd
+    bge LAB_8002d2f8
+LAB_8002d2e4:
+    lbz r0,0x0(r4)
+    addi r6,r6,0x1
+    addi r4,r4,0x1
+    subf r7,r0,r7
+    bdnz LAB_8002d2e4
+LAB_8002d2f8:
+    rlwinm r0,r7,0x0,0x18,0x1f
+    stbx r0,r3,r6
+    blr

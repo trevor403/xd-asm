@@ -362,7 +362,7 @@ LAB_801bd768:
     b LAB_801bd780
 LAB_801bd778:
     addi r3,r30,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bd780:
     rlwinm r3,r31,0x0,0x10,0x1f
     bl FUN_802a04a0
@@ -635,7 +635,7 @@ LAB_801bdb00:
     b LAB_801bdb1c
 LAB_801bdb10:
     mr r3,r30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801bdb1c:
     lha r0,0x8(r30)
@@ -783,7 +783,7 @@ LAB_801bdcf4:
     b LAB_801bdd10
 LAB_801bdd04:
     addi r3,r30,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801bdd10:
     lha r0,0x10(r30)
@@ -805,7 +805,7 @@ LAB_801bdd40:
     b LAB_801bdd5c
 LAB_801bdd50:
     addi r3,r30,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801bdd5c:
     lha r0,0x18(r30)
@@ -827,7 +827,7 @@ LAB_801bdd8c:
     b LAB_801bdda8
 LAB_801bdd9c:
     addi r3,r30,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801bdda8:
     lha r0,0x20(r30)
@@ -849,7 +849,7 @@ LAB_801bddd8:
     b LAB_801bddf4
 LAB_801bdde8:
     addi r3,r30,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f3,f1
 LAB_801bddf4:
     lfs f0,-0x56d0(r2)	# = 0.0, op 1: FLOAT_804ee6f0

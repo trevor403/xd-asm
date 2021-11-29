@@ -159,7 +159,7 @@ LAB_800f08cc:
     rlwinm r5,r0,0x5,0x0,0x1a
     bl FUN_802b7008
     lwz r3,0x19a0(r29)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
 LAB_800f09b4:
     psq_l f31,0xe8(r1),0x0,GQR0_INDEX	# stack
     lfd f31,0xe0(r1)	# stack

@@ -85,7 +85,7 @@ LAB_801e9924:
     psq_st f4,0x18(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     bne LAB_801e9960
     addi r8,r8,0x20
-    psq_stu f4,0x20(r3),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x20(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     addi r9,r9,0x10
     bdnz LAB_801e9904
     b LAB_801e9b38
@@ -109,14 +109,14 @@ LAB_801e9960:
     ps_add f3,f2,f9
     lwz r0,0x8(r9)
     ps_sub f9,f2,f9
-    psq_stu f8,0x8(r3),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f8,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f9,f9,f9
-    psq_stu f3,0x8(r3),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f3,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f10,f10,f10
     or r7,r7,r0
-    psq_stu f9,0x8(r3),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f10,0x8(r3),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f10,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801e9924
     b LAB_801e9b38
 LAB_801e99d4:
@@ -147,16 +147,16 @@ LAB_801e99d4:
     psq_l f6,0x0(r8),0x0,GQR0_INDEX
     ps_merge11 f12,f3,f8
     ps_sub f11,f11,f13
-    psq_stu f2,0x8(r3),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f2,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_add f4,f10,f12
     ps_sub f1,f10,f12
     or r7,r7,r0
-    psq_stu f4,0x8(r3),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f4,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f1,f1,f1
     ps_merge10 f11,f11,f11
-    psq_stu f1,0x8(r3),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f1,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f11,0x8(r3),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f11,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801e9924
     b LAB_801e9b38
 LAB_801e9a70:
@@ -203,12 +203,12 @@ LAB_801e9a70:
     ps_add f10,f13,f11
     ps_sub f9,f13,f11
     ps_merge10 f10,f10,f10
-    psq_stu f12,0x8(r3),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f12,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f4,f4,f4
-    psq_stu f9,0x8(r3),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
-    psq_stu f10,0x8(r3),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f10,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     or r7,r7,r0
-    psq_stu f4,0x8(r3),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x8(r3),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801e9924
 LAB_801e9b38:
     lwz r9,-0x45c0(r13)	# op 1: DAT_804eb860
@@ -352,7 +352,7 @@ LAB_801e9d34:
     psq_st f4,0x18(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     bne LAB_801e9d70
     addi r7,r7,0x20
-    psq_stu f4,0x20(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x20(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     addi r8,r8,0x10
     bdnz LAB_801e9d14
     b LAB_801e9f48
@@ -376,14 +376,14 @@ LAB_801e9d70:
     ps_add f3,f2,f9
     lwz r0,0x8(r8)
     ps_sub f9,f2,f9
-    psq_stu f8,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f8,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f9,f9,f9
-    psq_stu f3,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f3,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f10,f10,f10
     or r6,r6,r0
-    psq_stu f9,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f10,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f10,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801e9d34
     b LAB_801e9f48
 LAB_801e9de4:
@@ -414,16 +414,16 @@ LAB_801e9de4:
     psq_l f6,0x0(r7),0x0,GQR0_INDEX
     ps_merge11 f12,f3,f8
     ps_sub f11,f11,f13
-    psq_stu f2,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f2,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_add f4,f10,f12
     ps_sub f1,f10,f12
     or r6,r6,r0
-    psq_stu f4,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f4,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f1,f1,f1
     ps_merge10 f11,f11,f11
-    psq_stu f1,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f1,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f11,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f11,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801e9d34
     b LAB_801e9f48
 LAB_801e9e80:
@@ -470,12 +470,12 @@ LAB_801e9e80:
     ps_add f10,f13,f11
     ps_sub f9,f13,f11
     ps_merge10 f10,f10,f10
-    psq_stu f12,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f12,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f4,f4,f4
-    psq_stu f9,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
-    psq_stu f10,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f10,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     or r6,r6,r0
-    psq_stu f4,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801e9d34
 LAB_801e9f48:
     lwz r8,-0x45c0(r13)	# op 1: DAT_804eb860
@@ -618,7 +618,7 @@ LAB_801ea140:
     psq_st f4,0x18(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     bne LAB_801ea17c
     addi r7,r7,0x20
-    psq_stu f4,0x20(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x20(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     addi r8,r8,0x10
     bdnz LAB_801ea120
     b LAB_801ea354
@@ -642,14 +642,14 @@ LAB_801ea17c:
     ps_add f3,f2,f9
     lwz r0,0x8(r8)
     ps_sub f9,f2,f9
-    psq_stu f8,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f8,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f9,f9,f9
-    psq_stu f3,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f3,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f10,f10,f10
     or r6,r6,r0
-    psq_stu f9,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f10,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f10,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea140
     b LAB_801ea354
 LAB_801ea1f0:
@@ -680,16 +680,16 @@ LAB_801ea1f0:
     psq_l f6,0x0(r7),0x0,GQR0_INDEX
     ps_merge11 f12,f3,f8
     ps_sub f11,f11,f13
-    psq_stu f2,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f2,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_add f4,f10,f12
     ps_sub f1,f10,f12
     or r6,r6,r0
-    psq_stu f4,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f4,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f1,f1,f1
     ps_merge10 f11,f11,f11
-    psq_stu f1,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f1,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f11,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f11,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea140
     b LAB_801ea354
 LAB_801ea28c:
@@ -736,12 +736,12 @@ LAB_801ea28c:
     ps_add f10,f13,f11
     ps_sub f9,f13,f11
     ps_merge10 f10,f10,f10
-    psq_stu f12,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f12,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f4,f4,f4
-    psq_stu f9,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
-    psq_stu f10,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f10,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     or r6,r6,r0
-    psq_stu f4,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea140
 LAB_801ea354:
     lwz r8,-0x45c0(r13)	# op 1: DAT_804eb860
@@ -886,7 +886,7 @@ LAB_801ea554:
     psq_st f4,0x18(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     bne LAB_801ea590
     addi r7,r7,0x20
-    psq_stu f4,0x20(r10),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x20(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     addi r8,r8,0x10
     bdnz LAB_801ea534
     b LAB_801ea768
@@ -910,14 +910,14 @@ LAB_801ea590:
     ps_add f3,f2,f9
     lwz r0,0x8(r8)
     ps_sub f9,f2,f9
-    psq_stu f8,0x8(r10),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f8,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f9,f9,f9
-    psq_stu f3,0x8(r10),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f3,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f10,f10,f10
     or r6,r6,r0
-    psq_stu f9,0x8(r10),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f10,0x8(r10),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f10,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea554
     b LAB_801ea768
 LAB_801ea604:
@@ -948,16 +948,16 @@ LAB_801ea604:
     psq_l f6,0x0(r7),0x0,GQR0_INDEX
     ps_merge11 f12,f3,f8
     ps_sub f11,f11,f13
-    psq_stu f2,0x8(r10),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f2,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_add f4,f10,f12
     ps_sub f1,f10,f12
     or r6,r6,r0
-    psq_stu f4,0x8(r10),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f4,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f1,f1,f1
     ps_merge10 f11,f11,f11
-    psq_stu f1,0x8(r10),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f1,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f11,0x8(r10),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f11,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea554
     b LAB_801ea768
 LAB_801ea6a0:
@@ -1004,12 +1004,12 @@ LAB_801ea6a0:
     ps_add f10,f13,f11
     ps_sub f9,f13,f11
     ps_merge10 f10,f10,f10
-    psq_stu f12,0x8(r10),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f12,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f4,f4,f4
-    psq_stu f9,0x8(r10),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
-    psq_stu f10,0x8(r10),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f10,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     or r6,r6,r0
-    psq_stu f4,0x8(r10),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x8(r10),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea554
 LAB_801ea768:
     lwz r8,-0x45c0(r13)	# op 1: DAT_804eb860
@@ -1162,7 +1162,7 @@ LAB_801ea988:
     psq_st f4,0x18(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     bne LAB_801ea9c4
     addi r7,r7,0x20
-    psq_stu f4,0x20(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x20(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     addi r8,r8,0x10
     bdnz LAB_801ea968
     b LAB_801eab9c
@@ -1186,14 +1186,14 @@ LAB_801ea9c4:
     ps_add f3,f2,f9
     lwz r0,0x8(r8)
     ps_sub f9,f2,f9
-    psq_stu f8,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f8,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f9,f9,f9
-    psq_stu f3,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f3,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f10,f10,f10
     or r6,r6,r0
-    psq_stu f9,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f10,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f10,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea988
     b LAB_801eab9c
 LAB_801eaa38:
@@ -1224,16 +1224,16 @@ LAB_801eaa38:
     psq_l f6,0x0(r7),0x0,GQR0_INDEX
     ps_merge11 f12,f3,f8
     ps_sub f11,f11,f13
-    psq_stu f2,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f2,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_add f4,f10,f12
     ps_sub f1,f10,f12
     or r6,r6,r0
-    psq_stu f4,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f4,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f1,f1,f1
     ps_merge10 f11,f11,f11
-    psq_stu f1,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f1,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f11,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f11,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea988
     b LAB_801eab9c
 LAB_801eaad4:
@@ -1280,12 +1280,12 @@ LAB_801eaad4:
     ps_add f10,f13,f11
     ps_sub f9,f13,f11
     ps_merge10 f10,f10,f10
-    psq_stu f12,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f12,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f4,f4,f4
-    psq_stu f9,0x8(r9),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
-    psq_stu f10,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f10,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     or r6,r6,r0
-    psq_stu f4,0x8(r9),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x8(r9),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801ea988
 LAB_801eab9c:
     lwz r8,-0x45c0(r13)	# op 1: DAT_804eb860
@@ -1435,7 +1435,7 @@ LAB_801eadb0:
     psq_st f4,0x18(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     bne LAB_801eadec
     addi r7,r7,0x20
-    psq_stu f4,0x20(r8),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x20(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     addi r9,r9,0x10
     bdnz LAB_801ead90
     b LAB_801eafc4
@@ -1459,14 +1459,14 @@ LAB_801eadec:
     ps_add f3,f2,f9
     lwz r0,0x8(r9)
     ps_sub f9,f2,f9
-    psq_stu f8,0x8(r8),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f8,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f9,f9,f9
-    psq_stu f3,0x8(r8),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f3,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f10,f10,f10
     or r6,r6,r0
-    psq_stu f9,0x8(r8),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f10,0x8(r8),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f10,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801eadb0
     b LAB_801eafc4
 LAB_801eae60:
@@ -1497,16 +1497,16 @@ LAB_801eae60:
     psq_l f6,0x0(r7),0x0,GQR0_INDEX
     ps_merge11 f12,f3,f8
     ps_sub f11,f11,f13
-    psq_stu f2,0x8(r8),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f2,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_add f4,f10,f12
     ps_sub f1,f10,f12
     or r6,r6,r0
-    psq_stu f4,0x8(r8),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f4,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
     ps_merge10 f1,f1,f1
     ps_merge10 f11,f11,f11
-    psq_stu f1,0x8(r8),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f1,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     ps_mul f7,f7,f6
-    psq_stu f11,0x8(r8),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f11,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801eadb0
     b LAB_801eafc4
 LAB_801eaefc:
@@ -1553,12 +1553,12 @@ LAB_801eaefc:
     ps_add f10,f13,f11
     ps_sub f9,f13,f11
     ps_merge10 f10,f10,f10
-    psq_stu f12,0x8(r8),0x0,GQR0	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
+    psq_stu f12,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15a0, op 3: DAT_804a15a4
     ps_merge10 f4,f4,f4
-    psq_stu f9,0x8(r8),0x0,GQR0	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
-    psq_stu f10,0x8(r8),0x0,GQR0	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
+    psq_stu f9,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15a8, op 3: DAT_804a15ac
+    psq_stu f10,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b0, op 3: DAT_804a15b4
     or r6,r6,r0
-    psq_stu f4,0x8(r8),0x0,GQR0	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
+    psq_stu f4,0x8(r8),0x0,GQR0_INDEX	# op 1: DAT_804a15b8, op 3: DAT_804a15bc
     bdnz LAB_801eadb0
 LAB_801eafc4:
     lwz r7,-0x45c0(r13)	# op 1: DAT_804eb860

@@ -159,7 +159,7 @@ switchD_8013b8cc_X_caseD_5:
 LAB_8013b948:
     lwz r3,-0x4c6c(r13)	# op 1: DAT_804eb1b4
     lwz r3,0x19a0(r3)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
     lwz r0,0x94(r1)	# stack
     lwz r31,0x8c(r1)	# stack
     lwz r30,0x88(r1)	# stack

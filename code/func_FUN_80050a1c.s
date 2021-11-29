@@ -20,7 +20,7 @@ FUN_80050a1c:	# 0x80050a1c - 0x80050b2f
     bl FUN_8014b2f4
     mr r31,r3
     mr r3,r30
-    bl LexicalCast<f,i>
+    bl FUN_8014bd18
     cmpwi r31,0x3
     beq LAB_80050a7c
     bge LAB_80050a70

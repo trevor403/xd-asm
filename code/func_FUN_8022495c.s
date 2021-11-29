@@ -34,7 +34,7 @@ LAB_802249a4:
 LAB_802249c0:
     mr r3,r25
     bl FUN_8015e570
-    bl nlDLRingGetStart<11cBaseCamera>
+    bl FUN_8015e558
     bl ScriptFunction_getStringWithID
     mr r4,r3
     li r3,0xd

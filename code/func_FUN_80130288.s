@@ -80,7 +80,7 @@ LAB_80130360:
 LAB_80130398:
     lwz r3,-0x4c6c(r13)	# op 1: DAT_804eb1b4
     lwz r3,0x19a0(r3)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
 LAB_801303a4:
     lwz r0,0x14(r1)	# stack
     lwz r31,0xc(r1)	# stack

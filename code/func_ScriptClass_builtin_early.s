@@ -51,7 +51,7 @@ LAB_8023ad70:
     b LAB_8023ad88
 LAB_8023ad80:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023ad88:
     lwz r3,0x980(r29)
     li r28,0x1
@@ -127,7 +127,7 @@ LAB_8023ae68:
     b LAB_8023ae84
 LAB_8023ae78:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_8023ae84:
     lha r0,0x0(r31)
@@ -264,7 +264,7 @@ LAB_8023b034:
     b LAB_8023b04c
 LAB_8023b044:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023b04c:
     rlwinm r0,r30,0x2,0x0,0x1d
     add r3,r29,r0
@@ -324,7 +324,7 @@ LAB_8023b100:
     b LAB_8023b118
 LAB_8023b110:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023b118:
     lfs f0,-0x5130(r2)	# = 0.017453292, op 1: FLOAT_804eec90
     fmuls f1,f0,f1
@@ -354,7 +354,7 @@ LAB_8023b168:
     b LAB_8023b180
 LAB_8023b178:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023b180:
     lfs f0,-0x5130(r2)	# = 0.017453292, op 1: FLOAT_804eec90
     fmuls f1,f0,f1
@@ -384,7 +384,7 @@ LAB_8023b1d0:
     b LAB_8023b1e8
 LAB_8023b1e0:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023b1e8:
     lfs f0,-0x5130(r2)	# = 0.017453292, op 1: FLOAT_804eec90
     fmuls f1,f0,f1
@@ -414,7 +414,7 @@ LAB_8023b238:
     b LAB_8023b254
 LAB_8023b248:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_8023b254:
     lha r0,0x0(r31)
@@ -436,7 +436,7 @@ LAB_8023b284:
     b LAB_8023b29c
 LAB_8023b294:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023b29c:
     fmr f2,f31
     bl FUN_800e6ab8
@@ -467,7 +467,7 @@ LAB_8023b2f0:
     b LAB_8023b308
 LAB_8023b300:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023b308:
     bl FUN_800e6a78
     frsp f1,f1
@@ -497,7 +497,7 @@ LAB_8023b358:
     b LAB_8023b370
 LAB_8023b368:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023b370:
     lfs f0,-0x5128(r2)	# = 0.0, op 1: FLOAT_804eec98
     fcmpo cr0,f1,f0

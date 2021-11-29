@@ -26,7 +26,7 @@ LAB_801c5b2c:
     lfs f1,0x4(r3)
     b LAB_801c5b40
 LAB_801c5b3c:
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801c5b40:
     lwz r0,0x14(r1)	# stack
     mtspr LR,r0

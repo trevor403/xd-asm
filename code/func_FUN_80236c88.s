@@ -10,7 +10,7 @@ FUN_80236c88:	# 0x80236c88 - 0x80236cbb
     lis r4,-0x7fdd
     li r3,0x0
     stw r0,0x14(r1)	# stack
-    addi r4,r4,0x6cbc	# op 0: LexicalCast<PCc,f>
+    addi r4,r4,0x6cbc	# op 0: FUN_80236cbc
     li r5,0x0
     li r6,0x0
     bl FUN_801f311c

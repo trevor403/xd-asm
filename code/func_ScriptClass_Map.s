@@ -23,7 +23,7 @@ ScriptClass_Map:	# 0x801c057c - 0x801c192f
     subi r0,r26,0x10
     mr r29,r3
     cmplwi r0,0x33
-    bgt switchD_801c05dc_X_caseD_34
+    bgt switchD_801c05dc_X_caseD_44
     lis r3,-0x7fbf
     rlwinm r0,r0,0x2,0x0,0x1d
     subi r3,r3,0x4270	# = 801c05e0, op 0: switchD_801c05dc_X_switchdataD_8040bd90
@@ -36,31 +36,31 @@ switchD_801c05dc_X_caseD_10:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_11:
     bl FUN_80120bd0
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_12:
     bl FUN_801204d0
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_13:
     bl FUN_801204c0
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_14:
     bl FUN_801204b0
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_15:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -103,7 +103,7 @@ LAB_801c06c4:
     mr r3,r29
     rlwinm r4,r0,0x0,0x18,0x1f
     bl FUN_80152928
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_16:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -144,7 +144,7 @@ LAB_801c074c:
     mr r3,r28
     bl FUN_801202e0
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_17:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -204,7 +204,7 @@ LAB_801c0810:
     mr r4,r29
     bl FUN_80120304
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_18:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -267,7 +267,7 @@ LAB_801c08d8:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_19:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -332,7 +332,7 @@ LAB_801c09ac:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_29:
     lha r0,0x20(r31)
     cmpwi r0,0x23
@@ -408,7 +408,7 @@ LAB_801c0aac:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_1a:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -451,7 +451,7 @@ LAB_801c0b4c:
     subfe r0,r0,r4
     rlwinm r4,r0,0x0,0x18,0x1f
     bl FUN_80121310
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_1b:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -514,7 +514,7 @@ LAB_801c0c18:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_1c:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -557,7 +557,7 @@ LAB_801c0cb0:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_1d:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -596,7 +596,7 @@ LAB_801c0d34:
     b LAB_801c0d50
 LAB_801c0d44:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801c0d50:
     lha r0,0x18(r31)
@@ -618,7 +618,7 @@ LAB_801c0d80:
     b LAB_801c0d9c
 LAB_801c0d90:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801c0d9c:
     lha r0,0x20(r31)
@@ -640,7 +640,7 @@ LAB_801c0dcc:
     b LAB_801c0de8
 LAB_801c0ddc:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f3,f1
 LAB_801c0de8:
     fmr f1,f29
@@ -650,7 +650,7 @@ LAB_801c0de8:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_1e:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -690,7 +690,7 @@ LAB_801c0e74:
 LAB_801c0e80:
     mr r3,r28
     bl FUN_8011e954
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_1f:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -733,7 +733,7 @@ LAB_801c0f0c:
     mr r3,r29
     rlwinm r4,r0,0x0,0x18,0x1f
     bl FUN_80152928
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_20:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -776,10 +776,10 @@ LAB_801c0f9c:
     mr r3,r29
     rlwinm r4,r0,0x0,0x18,0x1f
     bl FUN_80152928
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_21:
     bl THPSimpleAudioStop
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_22:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -804,7 +804,7 @@ LAB_801c0fec:
     sth r0,0x0(r30)
     stw r3,0x4(r30)
     bl FUN_801257ac
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_23:
     lha r0,0x8(r31)
     cmpwi r0,0x4
@@ -840,13 +840,13 @@ LAB_801c1060:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_25:
     bl ScriptFunction_showTitleScreen
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_24:
     bl FUN_800100c0
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_26:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -867,17 +867,17 @@ LAB_801c10c0:
 LAB_801c10c8:
     bl ScriptHelper_enterMenuMap	# void ScriptHelper_enterMenuMap(GSFsysID fsysid)
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_27:
     li r3,0x3a6
     bl ScriptHelper_enterMenuMap	# void ScriptHelper_enterMenuMap(GSFsysID fsysid)
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_28:
     li r3,0x3a3
     bl ScriptHelper_enterMenuMap	# void ScriptHelper_enterMenuMap(GSFsysID fsysid)
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_2a:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -916,7 +916,7 @@ LAB_801c1160:
     b LAB_801c117c
 LAB_801c1170:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801c117c:
     lha r0,0x18(r31)
@@ -938,7 +938,7 @@ LAB_801c11ac:
     b LAB_801c11c8
 LAB_801c11bc:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801c11c8:
     lha r0,0x20(r31)
@@ -960,7 +960,7 @@ LAB_801c11f8:
     b LAB_801c1214
 LAB_801c1208:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801c1214:
     lha r0,0x28(r31)
@@ -987,30 +987,30 @@ LAB_801c1250:
     extsh r4,r0
     fmr f3,f29
     bl FUN_80120230
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_2b:
     li r3,0x3a7
     bl ScriptHelper_enterMenuMap	# void ScriptHelper_enterMenuMap(GSFsysID fsysid)
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_2c:
     bl FUN_8008a324
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_2d:
     bl FUN_8008a2fc
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_2e:
     bl FUN_8008a2d8
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_2f:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1055,7 +1055,7 @@ LAB_801c1320:
     stw r3,0x14(r4)
     lwz r3,0x914(r28)
     sth r0,0x10(r3)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_30:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1091,7 +1091,7 @@ LAB_801c13c0:
     li r0,0x2
     sth r0,0x0(r30)
     stfs f0,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_31:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1170,7 +1170,7 @@ LAB_801c14cc:
     mr r3,r28
     bl FUN_8011e954
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_32:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1292,44 +1292,44 @@ LAB_801c1644:
     rlwinm r8,r8,0x0,0x10,0x1f
     bl FUN_801256a0
     bl FUN_801257ac
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_33:
     bl FUN_800a1390
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_34:
     bl FUN_800a1340
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_35:
     bl FUN_800a1330
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_36:
     bl FUN_8008a294
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_37:
     bl FUN_8008a180
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_38:
     bl FUN_8008a170
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_39:
     bl FUN_8028cd60
     bl FUN_8028cd90
@@ -1337,7 +1337,7 @@ switchD_801c05dc_X_caseD_39:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_3a:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1360,7 +1360,7 @@ LAB_801c174c:
     bl FUN_80120bd0
     mr r4,r26
     bl FUN_8002da60
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_3b:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1383,21 +1383,21 @@ LAB_801c1798:
     bl FUN_80120bd0
     mr r4,r26
     bl FUN_8002d9d4
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_3c:
     bl FUN_800a1350
     bl FUN_80125d58
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_3d:
     bl FUN_80125974
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_3e:
     bl FUN_80068264
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_3f:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1417,7 +1417,7 @@ LAB_801c1804:
     bl Script_convertToInt
 LAB_801c180c:
     bl FUN_800a6d2c
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_40:
     bl FUN_8028cd60
     bl FUN_8028cd90
@@ -1425,21 +1425,21 @@ switchD_801c05dc_X_caseD_40:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_41:
     bl FUN_8008a160
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_42:
     bl FUN_8028cd60
     bl FUN_8028d054
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c05dc_X_caseD_34
+    b switchD_801c05dc_X_caseD_44
 switchD_801c05dc_X_caseD_43:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1460,7 +1460,7 @@ LAB_801c1890:
     b LAB_801c18ac
 LAB_801c18a0:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801c18ac:
     lha r0,0x10(r31)
@@ -1482,12 +1482,12 @@ LAB_801c18dc:
     b LAB_801c18f8
 LAB_801c18ec:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f2,f1
 LAB_801c18f8:
     fmr f1,f29
     bl FUN_800fe0bc
-switchD_801c05dc_X_caseD_34:
+switchD_801c05dc_X_caseD_44:
     li r3,0x0
 LAB_801c1904:
     psq_l f31,0x68(r1),0x0,GQR0_INDEX	# stack

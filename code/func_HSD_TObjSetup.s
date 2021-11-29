@@ -21,7 +21,7 @@ HSD_TObjSetup:	# 0x80269998 - 0x80269cdf
     ble LAB_80269cc4
     subi r0,r3,0x1
     cmplwi r0,0x7
-    bgt switchD_802699f0_X_caseD_8
+    bgt switchD_802699f0_X_caseD_9
     lis r3,-0x7fbe
     rlwinm r0,r0,0x2,0x0,0x1d
     subi r3,r3,0x6720
@@ -53,7 +53,7 @@ switchD_802699f0_X_caseD_7:
 switchD_802699f0_X_caseD_8:
     li r3,0x7
     b LAB_80269a48
-switchD_802699f0_X_caseD_8:
+switchD_802699f0_X_caseD_9:
     subi r3,r2,0x4ab8	# = "tobj.c", op 0: s_tobj.c_804ef308
     li r4,0x78f
     subi r5,r2,0x4a98	# = 30h    0, op 0: DAT_804ef328

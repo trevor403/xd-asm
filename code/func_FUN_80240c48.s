@@ -145,7 +145,7 @@ LAB_80240e14:
     b LAB_80240e30
 LAB_80240e24:
     mr r3,r30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_80240e30:
     lfs f0,-0x5090(r2)	# = 0.0, op 1: FLOAT_804eed30
@@ -176,7 +176,7 @@ LAB_80240e80:
     b LAB_80240e98
 LAB_80240e90:
     mr r3,r28
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80240e98:
     fdivs f0,f1,f31
     stfs f0,0x4(r29)
@@ -289,7 +289,7 @@ LAB_80241004:
     lfs f1,0x4(r3)
     b LAB_80241018
 LAB_80241014:
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80241018:
     lfs f0,-0x5090(r2)	# = 0.0, op 1: FLOAT_804eed30
     lwz r3,0x4(r28)

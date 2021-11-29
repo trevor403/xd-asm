@@ -37,7 +37,7 @@ LAB_80241ff0:
     lfs f1,0x4(r3)
     b LAB_80242004
 LAB_80242000:
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242004:
     lis r3,-0x7fb5
     stfsu f1,0x188c(r3)	# offset DAT_804b188c &0xffff, op 1: 0xffff

@@ -55,7 +55,7 @@ LAB_801bbeac:
     b LAB_801bbec4
 LAB_801bbebc:
     addi r3,r30,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bbec4:
     rlwinm r3,r31,0x0,0x10,0x1f
     bl FUN_801a7854

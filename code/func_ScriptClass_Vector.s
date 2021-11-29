@@ -119,7 +119,7 @@ LAB_80242bf4:
     b LAB_80242c0c
 LAB_80242c04:
     addi r3,r29,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242c0c:
     stfs f1,0x0(r31)
     lha r0,0x10(r29)
@@ -141,7 +141,7 @@ LAB_80242c40:
     b LAB_80242c58
 LAB_80242c50:
     addi r3,r29,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242c58:
     stfs f1,0x4(r31)
     lha r0,0x18(r29)
@@ -163,7 +163,7 @@ LAB_80242c8c:
     b LAB_80242ca4
 LAB_80242c9c:
     addi r3,r29,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242ca4:
     stfs f1,0x8(r31)
     b switchD_80242b4c_X_caseD_4
@@ -187,7 +187,7 @@ LAB_80242cdc:
     b LAB_80242cf4
 LAB_80242cec:
     addi r3,r29,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242cf4:
     stfs f1,0x0(r31)
     lha r0,0x10(r29)
@@ -209,7 +209,7 @@ LAB_80242d28:
     b LAB_80242d40
 LAB_80242d38:
     addi r3,r29,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242d40:
     stfs f1,0x4(r31)
     lha r0,0x18(r29)
@@ -231,7 +231,7 @@ LAB_80242d74:
     b LAB_80242d8c
 LAB_80242d84:
     addi r3,r29,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242d8c:
     stfs f1,0x8(r31)
     b switchD_80242b4c_X_caseD_4
@@ -255,7 +255,7 @@ LAB_80242dc4:
     b LAB_80242ddc
 LAB_80242dd4:
     addi r3,r29,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80242ddc:
     stfs f1,0x8(r31)
     stfs f1,0x4(r31)

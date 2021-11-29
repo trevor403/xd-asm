@@ -26,7 +26,7 @@ LAB_8028afbc:
     mr r0,r3
     mr r3,r30
     mr r28,r0
-    bl BasicSlotPoolHigh<33ListEntry<20AnimAudioEventLookup>>_X_allocFN
+    bl FUN_8014b32c
     cmplwi r29,0x0
     mr r3,r30
     bne LAB_8028afe8

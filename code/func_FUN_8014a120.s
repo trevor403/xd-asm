@@ -48,7 +48,7 @@ LAB_8014a198:
     mr r23,r0
     li r4,0x1
     bl FUN_801cefb4
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     bl FUN_80157a80
     rlwinm r25,r3,0x0,0x18,0x1f
     mr r3,r23

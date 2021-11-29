@@ -33,7 +33,7 @@ LAB_80158504:
     beq LAB_801585ac
 LAB_80158530:
     mr r3,r29
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     beq LAB_801585ac
     rlwinm r0,r30,0x0,0x10,0x1f

@@ -22,7 +22,7 @@ LAB_80129b5c:
     mr r4,r6
     bl FUN_80105a1c
     mr r3,r31
-    bl nlListContainer<P8SaveData>_X___ct
+    bl FUN_80129df0
     b LAB_80129b94
 LAB_80129b88:
     addi r31,r31,0x8

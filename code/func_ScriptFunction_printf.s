@@ -113,7 +113,7 @@ LAB_801bcee0:
     lfs f1,0x4(r3)
     b LAB_801bcef4
 LAB_801bcef0:
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bcef4:
     addi r3,r1,0x8
     subi r4,r2,0x56f0	# = 25h    %, op 0: DAT_804ee6d0

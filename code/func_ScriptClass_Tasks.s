@@ -425,7 +425,7 @@ LAB_801bc4b0:
     b LAB_801bc4c8
 LAB_801bc4c0:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bc4c8:
     bl FUN_801c7e98
 LAB_801bc4cc:

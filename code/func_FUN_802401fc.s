@@ -100,7 +100,7 @@ LAB_80240334:
     b LAB_80240350
 LAB_80240344:
     mr r3,r29
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_80240350:
     lha r0,0x0(r31)
@@ -122,7 +122,7 @@ LAB_80240380:
     b LAB_80240398
 LAB_80240390:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80240398:
     fcmpo cr0,f31,f1
     ble LAB_802403e8

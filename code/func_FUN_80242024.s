@@ -1,10 +1,10 @@
-# metadata: {"startAddress": "0x80242024", "size": 72, "inst": 18, "name": "FUN_80242024", "endAddress": "0x8024206b"}
+# metadata: {"startAddress": "0x80242024", "size": 72, "inst": 18, "name": "__unk_maybe_Script_VarToSingle", "endAddress": "0x8024206b"}
 
 #include "def.h"
 
-### Function: undefined FUN_80242024(void)
-.global FUN_80242024
-FUN_80242024:	# 0x80242024 - 0x8024206b
+### Function: undefined __unk_maybe_Script_VarToSingle(void)
+.global __unk_maybe_Script_VarToSingle
+__unk_maybe_Script_VarToSingle:	# 0x80242024 - 0x8024206b
     stwu r1,-0x10(r1)	# stack
     mfspr r0,LR
     stw r0,0x14(r1)	# stack

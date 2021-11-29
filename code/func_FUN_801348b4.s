@@ -122,7 +122,7 @@ LAB_801349b4:
     bl FUN_8028a890
     lwz r3,-0x4c6c(r13)	# op 1: DAT_804eb1b4
     lwz r3,0x19a0(r3)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
     b LAB_80134b98
 LAB_80134a64:
     lwz r29,0x4c(r27)

@@ -34,7 +34,7 @@ LAB_80157f08:
     li r3,0x0
     b LAB_80157f30
 LAB_80157f20:
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     bne LAB_80157f30
     li r3,0x0

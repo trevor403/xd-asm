@@ -35,7 +35,7 @@ LAB_802a63e8:
     li r0,0x0
     mr r3,r30
     stw r0,0x4(r30)
-    bl LexicalCast<b,i>
+    bl FUN_802a637c
 LAB_802a6404:
     lwz r0,0x14(r1)	# stack
     lwz r31,0xc(r1)	# stack

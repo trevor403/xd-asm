@@ -102,7 +102,7 @@ LAB_80240864:
     b LAB_80240880
 LAB_80240874:
     mr r3,r29
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_80240880:
     lha r0,0x0(r31)
@@ -124,7 +124,7 @@ LAB_802408b0:
     b LAB_802408c8
 LAB_802408c0:
     mr r3,r31
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_802408c8:
     fcmpu cr0,f31,f1
     bne LAB_80240a18

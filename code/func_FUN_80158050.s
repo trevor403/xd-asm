@@ -37,7 +37,7 @@ FUN_80158050:	# 0x80158050 - 0x801581bf
     cmplwi r3,0x0
     beq LAB_801580e0
 LAB_801580cc:
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     beq LAB_801580e0
     rlwinm r4,r28,0x0,0x18,0x1f
@@ -56,7 +56,7 @@ LAB_801580e0:
     cmplwi r3,0x0
     beq LAB_80158124
 LAB_80158110:
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     beq LAB_80158124
     rlwinm r4,r29,0x0,0x18,0x1f
@@ -75,7 +75,7 @@ LAB_80158124:
     cmplwi r3,0x0
     beq LAB_80158168
 LAB_80158154:
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     beq LAB_80158168
     rlwinm r4,r30,0x0,0x18,0x1f
@@ -94,7 +94,7 @@ LAB_80158168:
     cmplwi r3,0x0
     beq LAB_801581ac
 LAB_80158198:
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     beq LAB_801581ac
     rlwinm r4,r31,0x0,0x18,0x1f

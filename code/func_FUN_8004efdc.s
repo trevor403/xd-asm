@@ -56,7 +56,7 @@ LAB_8004f068:
     bl FUN_801cf30c
     cmplwi r3,0x0
     beq LAB_8004f120
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     beq LAB_8004f120
     bl FUN_80157a80

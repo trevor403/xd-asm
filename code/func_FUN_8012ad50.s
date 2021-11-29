@@ -111,11 +111,11 @@ LAB_8012ae5c:
     mr r3,r29
     li r4,0x1
     li r5,0x0
-    bl nlQSort<20AnimAudioEventLookup>
+    bl FUN_8018adb8
     mr r3,r29
     li r4,0x2
     li r5,0x0
-    bl nlQSort<20AnimAudioEventLookup>
+    bl FUN_8018adb8
     mr r3,r26
     bl FUN_802b1da8
     lis r3,-0x7fbc
@@ -141,11 +141,11 @@ LAB_8012af0c:
     mr r3,r29
     mr r5,r25
     li r4,0x1
-    bl nlQSort<20AnimAudioEventLookup>
+    bl FUN_8018adb8
     mr r3,r29
     mr r5,r25
     li r4,0x2
-    bl nlQSort<20AnimAudioEventLookup>
+    bl FUN_8018adb8
     mr r3,r26
     bl FUN_802b1da8
 LAB_8012af70:

@@ -59,7 +59,7 @@ LAB_8016ebd4:
     addi r5,r5,0x40	# op 0: DAT_8045ed88
     bdnz LAB_8016ebd4
 LAB_8016ec60:
-    bl ListContainerBase<P6cSAnim,33NewAdapter<19ListEntry<P6cSAnim>>>_X_DeleteEntry
+    bl FUN_80180c34
     lwz r0,0x14(r1)	# stack
     mtspr LR,r0
     addi r1,r1,0x10

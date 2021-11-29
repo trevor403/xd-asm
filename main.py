@@ -51,6 +51,11 @@ def main(override):
         body = func.getBody()
         insts = currentProgram.getListing().getInstructions(body, True)
 
+        ## debug
+        # if name not in [
+        #     "FUN_802ddc1c", # Replayable<0,9SaveFrame,14RenderSnapshot>
+        # ]: continue
+
         sys.stdout.write(name+"\n")
 
         ranges = [[a.minAddress.offset, a.maxAddress.offset] for a in body]
@@ -148,7 +153,7 @@ def main(override):
             mnemonic = codeUnitFormatASM.getMnemonicRepresentation(inst)
             if mnemonic == "or" and len(set([str(o) for o in ops[1:]])) == 1:
                 rep = "mr {},{}".format(ops[0], ops[1])
-            elif mnemonic == "psq_l" or mnemonic == "psq_st":
+            elif mnemonic == "psq_l" or mnemonic == "psq_st" or mnemonic == 'psq_stu':
                 rep += "_INDEX"
 
             displayableEol = ghidra.app.util.DisplayableEol(inst, False, False, False, True, 6, True, True)
@@ -176,7 +181,7 @@ def main(override):
 
             # if i >= 8: break
 
-    f.close()
+        f.close()
 
     if not override:
         global scope

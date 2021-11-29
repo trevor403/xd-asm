@@ -727,7 +727,7 @@ LAB_801c3294:
     b LAB_801c32ac
 LAB_801c32a4:
     addi r3,r31,0x10	# op 0: param_1
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801c32ac:
     bl __cvt_fp2unsigned
     mr r4,r3	# op 0: param_2, op 1: param_1, op 2: param_1

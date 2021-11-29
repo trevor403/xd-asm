@@ -22,7 +22,7 @@ ScriptClass_Camera:	# 0x801be3cc - 0x801c057b
     mr r30,r6
     subi r0,r4,0x10
     cmplwi r0,0x2f
-    bgt switchD_801be428_X_caseD_30
+    bgt switchD_801be428_X_caseD_40
     lis r3,-0x7fbf
     rlwinm r0,r0,0x2,0x0,0x1d
     subi r3,r3,0x4330	# = 801be42c, op 0: switchD_801be428_X_switchdataD_8040bcd0
@@ -50,7 +50,7 @@ LAB_801be45c:
     b LAB_801be478
 LAB_801be46c:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801be478:
     lha r0,0x10(r31)
@@ -72,7 +72,7 @@ LAB_801be4a8:
     b LAB_801be4c4
 LAB_801be4b8:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801be4c4:
     lha r0,0x18(r31)
@@ -94,13 +94,13 @@ LAB_801be4f4:
     b LAB_801be510
 LAB_801be504:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f3,f1
 LAB_801be510:
     fmr f1,f31
     fmr f2,f30
     bl FUN_8019a1fc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_11:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -142,7 +142,7 @@ LAB_801be594:
 LAB_801be59c:
     rlwinm r3,r3,0x0,0x18,0x1f
     bl FUN_801980c4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_12:
     lha r0,0x8(r31)
     cmpwi r0,0x23
@@ -158,7 +158,7 @@ LAB_801be5cc:
     lwz r3,0x0(r4)
     lwz r4,0x4(r4)
     bl FUN_8019804c
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_3d:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -181,7 +181,7 @@ LAB_801be618:
     bl FUN_80120bd0
     mr r4,r30
     bl FUN_8019804c
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_13:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -202,7 +202,7 @@ LAB_801be658:
     b LAB_801be674
 LAB_801be668:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801be674:
     lha r0,0x10(r31)
@@ -224,7 +224,7 @@ LAB_801be6a4:
     b LAB_801be6c0
 LAB_801be6b4:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801be6c0:
     lha r0,0x18(r31)
@@ -246,13 +246,13 @@ LAB_801be6f0:
     b LAB_801be70c
 LAB_801be700:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f3,f1
 LAB_801be70c:
     fmr f1,f30
     fmr f2,f31
     bl FUN_80196dc8
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_14:
     lha r0,0x8(r31)
     cmpwi r0,0x4
@@ -267,7 +267,7 @@ LAB_801be738:
     lfs f2,0x4(r3)
     lfs f3,0x8(r3)
     bl FUN_80196dc8
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_15:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -288,7 +288,7 @@ LAB_801be77c:
     b LAB_801be798
 LAB_801be78c:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801be798:
     lha r0,0x10(r31)
@@ -310,7 +310,7 @@ LAB_801be7c8:
     b LAB_801be7e4
 LAB_801be7d8:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801be7e4:
     lha r0,0x18(r31)
@@ -332,13 +332,13 @@ LAB_801be814:
     b LAB_801be830
 LAB_801be824:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f3,f1
 LAB_801be830:
     fmr f1,f30
     fmr f2,f31
     bl FUN_80196ddc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_16:
     lha r0,0x8(r31)
     cmpwi r0,0x4
@@ -353,7 +353,7 @@ LAB_801be85c:
     lfs f2,0x4(r3)
     lfs f3,0x8(r3)
     bl FUN_80196ddc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_17:
     li r3,0x0
     li r4,0x0
@@ -378,7 +378,7 @@ LAB_801be8b0:
     b LAB_801be8cc
 LAB_801be8c0:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f28,f1
 LAB_801be8cc:
     lha r0,0x10(r31)
@@ -400,7 +400,7 @@ LAB_801be8fc:
     b LAB_801be918
 LAB_801be90c:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801be918:
     lha r0,0x8(r31)
@@ -422,7 +422,7 @@ LAB_801be948:
     b LAB_801be960
 LAB_801be958:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801be960:
     stfs f1,0x18(r1)	# stack
     addi r3,r1,0x18
@@ -432,7 +432,7 @@ LAB_801be960:
     mr r3,r27
     addi r4,r1,0x18
     bl FUN_800ec798
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_18:
     li r3,0x0
     li r4,0x0
@@ -460,7 +460,7 @@ LAB_801be9c8:
 LAB_801be9d4:
     mr r3,r27
     bl FUN_800ec798
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_19:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -481,7 +481,7 @@ LAB_801bea10:
     b LAB_801bea2c
 LAB_801bea20:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801bea2c:
     lha r0,0x10(r31)
@@ -503,7 +503,7 @@ LAB_801bea5c:
     b LAB_801bea78
 LAB_801bea6c:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801bea78:
     lha r0,0x18(r31)
@@ -525,13 +525,13 @@ LAB_801beaa8:
     b LAB_801beac4
 LAB_801beab8:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f3,f1
 LAB_801beac4:
     fmr f1,f30
     fmr f2,f31
     bl FUN_80196d70
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_1a:
     lha r0,0x8(r31)
     cmpwi r0,0x4
@@ -546,7 +546,7 @@ LAB_801beaf0:
     lfs f2,0x4(r3)
     lfs f3,0x8(r3)
     bl FUN_80196d70
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_1b:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -603,7 +603,7 @@ LAB_801bebac:
     b LAB_801bebc8
 LAB_801bebbc:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801bebc8:
     lha r0,0x20(r31)
@@ -630,16 +630,16 @@ LAB_801bec00:
     rlwinm r5,r0,0x0,0x18,0x1f
     mr r4,r29
     bl FUN_801971c8
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_1c:
     bl FUN_80196ef0
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_1d:
     bl FUN_80196ea0
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_1e:
     bl FUN_80196e50
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_1f:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -666,7 +666,7 @@ LAB_801bec70:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_20:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -687,10 +687,10 @@ LAB_801becc4:
     b LAB_801becdc
 LAB_801becd4:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801becdc:
     bl FUN_80196df0
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_21:
     lha r0,0x10(r31)
     cmpwi r0,0x23
@@ -759,13 +759,13 @@ LAB_801bedb4:
     b LAB_801bedcc
 LAB_801bedc4:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bedcc:
     lwz r4,0x0(r29)
     rlwinm r3,r30,0x0,0x18,0x1f
     lwz r5,0x4(r29)
     bl FUN_80197df0
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_22:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -899,7 +899,7 @@ LAB_801bef48:
     lfd f0,0x40(r1)	# stack
     fsubs f4,f0,f4
     bl FUN_80197cbc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_23:
     lha r0,0x10(r31)
     cmpwi r0,0x4
@@ -967,7 +967,7 @@ LAB_801bf078:
     b LAB_801bf090
 LAB_801bf088:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf090:
     fmr f4,f1
     lfs f1,0x0(r30)
@@ -975,7 +975,7 @@ LAB_801bf090:
     rlwinm r3,r27,0x0,0x18,0x1f
     lfs f3,0x8(r30)
     bl FUN_80197cbc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_24:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1033,7 +1033,7 @@ LAB_801bf158:
     b LAB_801bf174
 LAB_801bf168:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801bf174:
     lha r0,0x18(r31)
@@ -1055,7 +1055,7 @@ LAB_801bf1a4:
     b LAB_801bf1c0
 LAB_801bf1b4:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801bf1c0:
     lha r0,0x20(r31)
@@ -1077,7 +1077,7 @@ LAB_801bf1f0:
     b LAB_801bf20c
 LAB_801bf200:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801bf20c:
     lha r0,0x28(r31)
@@ -1099,7 +1099,7 @@ LAB_801bf23c:
     b LAB_801bf258
 LAB_801bf24c:
     addi r3,r31,0x28
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f4,f1
 LAB_801bf258:
     fmr f1,f30
@@ -1107,7 +1107,7 @@ LAB_801bf258:
     fmr f2,f31
     fmr f3,f29
     bl FUN_80197bc4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_25:
     lha r0,0x10(r31)
     cmpwi r0,0x4
@@ -1175,7 +1175,7 @@ LAB_801bf33c:
     b LAB_801bf354
 LAB_801bf34c:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf354:
     fmr f4,f1
     lfs f1,0x0(r30)
@@ -1183,7 +1183,7 @@ LAB_801bf354:
     rlwinm r3,r27,0x0,0x18,0x1f
     lfs f3,0x8(r30)
     bl FUN_80197bc4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_26:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1223,7 +1223,7 @@ LAB_801bf3e0:
     b LAB_801bf3fc
 LAB_801bf3f0:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801bf3fc:
     lha r0,0x10(r31)
@@ -1245,7 +1245,7 @@ LAB_801bf42c:
     b LAB_801bf448
 LAB_801bf43c:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801bf448:
     lha r0,0x18(r31)
@@ -1267,7 +1267,7 @@ LAB_801bf478:
     b LAB_801bf494
 LAB_801bf488:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801bf494:
     lha r0,0x20(r31)
@@ -1289,7 +1289,7 @@ LAB_801bf4c4:
     b LAB_801bf4e0
 LAB_801bf4d4:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f28,f1
 LAB_801bf4e0:
     lha r0,0x28(r31)
@@ -1311,7 +1311,7 @@ LAB_801bf510:
     b LAB_801bf52c
 LAB_801bf520:
     addi r3,r31,0x28
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f4,f1
 LAB_801bf52c:
     fctiwz f0,f29
@@ -1321,7 +1321,7 @@ LAB_801bf52c:
     fmr f3,f28
     lwz r3,0x44(r1)	# stack
     bl FUN_80197a54
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_27:
     lha r0,0x10(r31)
     cmpwi r0,0x4
@@ -1389,7 +1389,7 @@ LAB_801bf618:
     b LAB_801bf630
 LAB_801bf628:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf630:
     fmr f4,f1
     lfs f1,0x0(r30)
@@ -1397,7 +1397,7 @@ LAB_801bf630:
     rlwinm r3,r27,0x0,0x18,0x1f
     lfs f3,0x8(r30)
     bl FUN_80197a54
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_28:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1424,7 +1424,7 @@ LAB_801bf684:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_29:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1445,10 +1445,10 @@ LAB_801bf6d8:
     b LAB_801bf6f0
 LAB_801bf6e8:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf6f0:
     bl FUN_80196ce8
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_2a:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1469,10 +1469,10 @@ LAB_801bf728:
     b LAB_801bf740
 LAB_801bf738:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf740:
     bl FUN_80196c60
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_2b:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1493,10 +1493,10 @@ LAB_801bf778:
     b LAB_801bf790
 LAB_801bf788:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf790:
     bl FUN_80196bd8
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_2c:
     li r3,0x0
     li r4,0x0
@@ -1526,7 +1526,7 @@ LAB_801bf7ec:
     b LAB_801bf804
 LAB_801bf7fc:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf804:
     stfs f1,0x14(r1)	# stack
     bl FUN_80196b28
@@ -1536,10 +1536,10 @@ LAB_801bf804:
     lfs f3,0xc(r1)	# stack
     lfs f4,0x8(r1)	# stack
     bl FUN_800ec7f4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_2d:
     bl FUN_80198100
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_2e:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1560,7 +1560,7 @@ LAB_801bf860:
     b LAB_801bf87c
 LAB_801bf870:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f28,f1
 LAB_801bf87c:
     lha r0,0x10(r31)
@@ -1585,17 +1585,17 @@ LAB_801bf8b4:
     subfe r0,r0,r3
     rlwinm r3,r0,0x0,0x18,0x1f
     bl FUN_801974dc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_2f:
     li r3,0x0
     bl FUN_801980c4
     bl FUN_80123e5c
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_30:
     bl FUN_80123e50
     li r3,0x3
     bl FUN_801980c4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_31:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1616,16 +1616,16 @@ LAB_801bf91c:
     b LAB_801bf934
 LAB_801bf92c:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bf934:
     bl FUN_80123bd4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_32:
     bl FUN_80196af8
     li r0,0x2
     sth r0,0x0(r30)
     stfs f1,0x4(r30)
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_33:
     addi r3,r1,0x18
     bl FUN_80197f3c
@@ -1642,7 +1642,7 @@ switchD_801be428_X_caseD_33:
     stw r3,0x14(r4)
     lwz r3,0x914(r27)
     sth r0,0x10(r3)
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_34:
     addi r3,r1,0x18
     bl FUN_80197ec4
@@ -1659,7 +1659,7 @@ switchD_801be428_X_caseD_34:
     stw r3,0x14(r4)
     lwz r3,0x914(r27)
     sth r0,0x10(r3)
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_3a:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1793,10 +1793,10 @@ LAB_801bfb88:
     b LAB_801bfba0
 LAB_801bfb98:
     addi r3,r31,0x30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bfba0:
     bl FUN_80197a2c
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_39:
     lha r0,0x10(r31)
     cmpwi r0,0x4
@@ -1845,7 +1845,7 @@ LAB_801bfc34:
     b LAB_801bfc4c
 LAB_801bfc44:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bfc4c:
     fmr f4,f1
     lfs f1,0x0(r30)
@@ -1872,10 +1872,10 @@ LAB_801bfc94:
     b LAB_801bfcac
 LAB_801bfca4:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bfcac:
     bl FUN_80197a2c
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_36:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1914,7 +1914,7 @@ LAB_801bfd20:
     b LAB_801bfd3c
 LAB_801bfd30:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f28,f1
 LAB_801bfd3c:
     lha r0,0x18(r31)
@@ -1936,7 +1936,7 @@ LAB_801bfd6c:
     b LAB_801bfd88
 LAB_801bfd7c:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801bfd88:
     lha r0,0x20(r31)
@@ -1958,7 +1958,7 @@ LAB_801bfdb8:
     b LAB_801bfdd4
 LAB_801bfdc8:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801bfdd4:
     lha r0,0x28(r31)
@@ -1980,7 +1980,7 @@ LAB_801bfe04:
     b LAB_801bfe20
 LAB_801bfe14:
     addi r3,r31,0x28
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f4,f1
 LAB_801bfe20:
     fmr f1,f28
@@ -2007,10 +2007,10 @@ LAB_801bfe64:
     b LAB_801bfe7c
 LAB_801bfe74:
     addi r3,r31,0x30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bfe7c:
     bl FUN_801979dc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_35:
     lha r0,0x10(r31)
     cmpwi r0,0x4
@@ -2059,7 +2059,7 @@ LAB_801bff10:
     b LAB_801bff28
 LAB_801bff20:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bff28:
     fmr f4,f1
     lfs f1,0x0(r30)
@@ -2086,10 +2086,10 @@ LAB_801bff70:
     b LAB_801bff88
 LAB_801bff80:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801bff88:
     bl FUN_801979dc
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_38:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -2110,7 +2110,7 @@ LAB_801bffc0:
     b LAB_801bffdc
 LAB_801bffd0:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f28,f1
 LAB_801bffdc:
     lha r0,0x10(r31)
@@ -2132,7 +2132,7 @@ LAB_801c000c:
     b LAB_801c0028
 LAB_801c001c:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f29,f1
 LAB_801c0028:
     lha r0,0x18(r31)
@@ -2154,7 +2154,7 @@ LAB_801c0058:
     b LAB_801c0074
 LAB_801c0068:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801c0074:
     lha r0,0x20(r31)
@@ -2176,7 +2176,7 @@ LAB_801c00a4:
     b LAB_801c00c0
 LAB_801c00b4:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801c00c0:
     lha r0,0x28(r31)
@@ -2198,7 +2198,7 @@ LAB_801c00f0:
     b LAB_801c010c
 LAB_801c0100:
     addi r3,r31,0x28
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f4,f1
 LAB_801c010c:
     fctiwz f0,f28
@@ -2227,10 +2227,10 @@ LAB_801c0158:
     b LAB_801c0170
 LAB_801c0168:
     addi r3,r31,0x30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801c0170:
     bl FUN_801979b4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_37:
     lha r0,0x10(r31)
     cmpwi r0,0x4
@@ -2279,7 +2279,7 @@ LAB_801c0204:
     b LAB_801c021c
 LAB_801c0214:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801c021c:
     fmr f4,f1
     lfs f1,0x0(r30)
@@ -2306,10 +2306,10 @@ LAB_801c0264:
     b LAB_801c027c
 LAB_801c0274:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801c027c:
     bl FUN_801979b4
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_3b:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -2348,7 +2348,7 @@ LAB_801c02f0:
     b LAB_801c030c
 LAB_801c0300:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f28,f1
 LAB_801c030c:
     lha r0,0x18(r31)
@@ -2370,13 +2370,13 @@ LAB_801c033c:
     b LAB_801c0358
 LAB_801c034c:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f2,f1
 LAB_801c0358:
     fmr f1,f28
     rlwinm r3,r27,0x0,0x18,0x1f
     bl FUN_80197b80
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_3c:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -2415,7 +2415,7 @@ LAB_801c03d4:
     b LAB_801c03f0
 LAB_801c03e4:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f28,f1
 LAB_801c03f0:
     lha r0,0x18(r31)
@@ -2437,7 +2437,7 @@ LAB_801c0420:
     b LAB_801c043c
 LAB_801c0430:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f2,f1
 LAB_801c043c:
     fmr f1,f28
@@ -2462,10 +2462,10 @@ LAB_801c0478:
     b LAB_801c0490
 LAB_801c0488:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801c0490:
     bl FUN_8019798c
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_3e:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -2507,7 +2507,7 @@ LAB_801c0510:
     mr r4,r27
     mr r5,r28
     bl FUN_8019801c
-    b switchD_801be428_X_caseD_30
+    b switchD_801be428_X_caseD_40
 switchD_801be428_X_caseD_3f:
     lha r0,0x8(r31)
     cmpwi r0,0x4
@@ -2519,7 +2519,7 @@ LAB_801c0538:
     bl FUN_80241f90
 LAB_801c0540:
     bl FUN_80197ffc
-switchD_801be428_X_caseD_30:
+switchD_801be428_X_caseD_40:
     li r3,0x0
     psq_l f31,0x98(r1),0x0,GQR0_INDEX	# stack
     lfd f31,0x90(r1)	# stack

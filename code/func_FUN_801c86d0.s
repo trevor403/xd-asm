@@ -82,7 +82,7 @@ LAB_801c8774:
     cmplwi r4,0x7
     stw r3,0x28(r1)	# stack
     stw r0,0x2c(r1)	# stack
-    bgt switchD_801c87fc_X_caseD_8
+    bgt switchD_801c87fc_X_caseD_f
     lis r3,-0x7fbf
     rlwinm r4,r4,0x2,0x0,0x1d
     subi r3,r3,0x3d8c
@@ -106,7 +106,7 @@ switchD_801c87fc_X_caseD_7:
     sth r5,0x16(r1)	# stack
     sth r4,0x18(r1)	# stack
     sth r3,0x1a(r1)	# stack
-    b switchD_801c87fc_X_caseD_8
+    b switchD_801c87fc_X_caseD_f
 switchD_801c87fc_X_caseD_8:
     lis r3,0x1
     li r6,0xef
@@ -172,7 +172,7 @@ LAB_801c890c:
 LAB_801c8918:
     addi r0,r1,0x30
     stw r0,0x24(r1)	# stack
-    b switchD_801c87fc_X_caseD_8
+    b switchD_801c87fc_X_caseD_f
 switchD_801c87fc_X_caseD_9:
     lis r3,0x1
     li r6,0x164
@@ -193,7 +193,7 @@ switchD_801c87fc_X_caseD_9:
     sth r5,0x16(r1)	# stack
     sth r4,0x18(r1)	# stack
     sth r0,0x1a(r1)	# stack
-    b switchD_801c87fc_X_caseD_8
+    b switchD_801c87fc_X_caseD_f
 switchD_801c87fc_X_caseD_a:
     lis r3,0x1
     li r6,0xd5
@@ -214,7 +214,7 @@ switchD_801c87fc_X_caseD_a:
     sth r5,0x16(r1)	# stack
     sth r4,0x18(r1)	# stack
     sth r0,0x1a(r1)	# stack
-    b switchD_801c87fc_X_caseD_8
+    b switchD_801c87fc_X_caseD_f
 switchD_801c87fc_X_caseD_b:
     lis r3,0x1
     li r6,0xf6
@@ -235,7 +235,7 @@ switchD_801c87fc_X_caseD_b:
     sth r5,0x16(r1)	# stack
     sth r4,0x18(r1)	# stack
     sth r0,0x1a(r1)	# stack
-    b switchD_801c87fc_X_caseD_8
+    b switchD_801c87fc_X_caseD_f
 switchD_801c87fc_X_caseD_c:
     li r6,0x98
     li r5,0xf6
@@ -247,7 +247,7 @@ switchD_801c87fc_X_caseD_c:
     sth r4,0x16(r1)	# stack
     sth r3,0x18(r1)	# stack
     sth r0,0x1a(r1)	# stack
-    b switchD_801c87fc_X_caseD_8
+    b switchD_801c87fc_X_caseD_f
 switchD_801c87fc_X_caseD_d:
     li r6,0x9b
     li r5,0xb3
@@ -259,7 +259,7 @@ switchD_801c87fc_X_caseD_d:
     sth r4,0x16(r1)	# stack
     sth r3,0x18(r1)	# stack
     sth r0,0x1a(r1)	# stack
-    b switchD_801c87fc_X_caseD_8
+    b switchD_801c87fc_X_caseD_f
 switchD_801c87fc_X_caseD_e:
     li r6,0x9e
     li r5,0xf2
@@ -271,7 +271,7 @@ switchD_801c87fc_X_caseD_e:
     sth r4,0x16(r1)	# stack
     sth r3,0x18(r1)	# stack
     sth r0,0x1a(r1)	# stack
-switchD_801c87fc_X_caseD_8:
+switchD_801c87fc_X_caseD_f:
     lhz r3,0xe(r1)	# stack
     bl FUN_80149a08
     bl FUN_80144498

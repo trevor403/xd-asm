@@ -87,7 +87,7 @@ LAB_8023fb84:
     b LAB_8023fb9c
 LAB_8023fb94:
     mr r3,r29
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8023fb9c:
     rlwinm r0,r28,0x2,0x0,0x1d
     stfsx f1,r30,r0

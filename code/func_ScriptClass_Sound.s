@@ -17,7 +17,7 @@ ScriptClass_Sound:	# 0x801b959c - 0x801ba203
     mr r30,r6
     subi r0,r4,0x10
     cmplwi r0,0x11
-    bgt switchD_801b95e4_X_caseD_12
+    bgt switchD_801b95e4_X_caseD_22
     lis r3,-0x7fbf
     rlwinm r0,r0,0x2,0x0,0x1d
     subi r3,r3,0x45a8	# = 801b95e8, op 0: switchD_801b95e4_X_switchdataD_8040ba58
@@ -88,7 +88,7 @@ LAB_801b969c:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_11:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -152,7 +152,7 @@ LAB_801b9774:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_12:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -196,7 +196,7 @@ LAB_801b9810:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_13:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -220,7 +220,7 @@ LAB_801b9864:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_14:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -259,7 +259,7 @@ LAB_801b98e8:
     b LAB_801b9904
 LAB_801b98f8:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801b9904:
     lha r0,0x18(r31)
@@ -281,7 +281,7 @@ LAB_801b9934:
     b LAB_801b9950
 LAB_801b9944:
     addi r3,r31,0x18
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f30,f1
 LAB_801b9950:
     lha r0,0x20(r31)
@@ -303,7 +303,7 @@ LAB_801b9980:
     b LAB_801b999c
 LAB_801b9990:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f3,f1
 LAB_801b999c:
     fmr f1,f31
@@ -314,14 +314,14 @@ LAB_801b999c:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_15:
     bl FUN_80183438
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_16:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -365,7 +365,7 @@ LAB_801b9a50:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_17:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -429,7 +429,7 @@ LAB_801b9b20:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_18:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -492,7 +492,7 @@ LAB_801b9bf8:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_19:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -575,7 +575,7 @@ LAB_801b9d08:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_1a:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -658,13 +658,13 @@ LAB_801b9e20:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_1b:
     bl FUN_80183168
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_1c:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -687,7 +687,7 @@ LAB_801b9e94:
     subfe r0,r0,r3
     rlwinm r3,r0,0x0,0x18,0x1f
     bl FUN_802a3014
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_1d:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -708,7 +708,7 @@ LAB_801b9ed8:
     b LAB_801b9ef4
 LAB_801b9ee8:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801b9ef4:
     lha r0,0x10(r31)
@@ -730,12 +730,12 @@ LAB_801b9f24:
     b LAB_801b9f40
 LAB_801b9f34:
     addi r3,r31,0x10
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f2,f1
 LAB_801b9f40:
     fmr f1,f31
     bl FUN_802a2fb8
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_1e:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -756,10 +756,10 @@ LAB_801b9f7c:
     b LAB_801b9f94
 LAB_801b9f8c:
     addi r3,r31,0x8
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_801b9f94:
     bl FUN_802a2f7c
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_1f:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -779,7 +779,7 @@ LAB_801b9fcc:
     bl Script_convertToInt
 LAB_801b9fd4:
     bl FUN_801831d0
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_20:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -843,7 +843,7 @@ LAB_801ba090:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801b95e4_X_caseD_12
+    b switchD_801b95e4_X_caseD_22
 switchD_801b95e4_X_caseD_21:
     lis r4,-0x7fe4
     li r3,0x80
@@ -931,7 +931,7 @@ LAB_801ba1c0:
     li r4,0x4
     crxor 4*cr1+eq,4*cr1+eq,4*cr1+eq
     bl Maybe_Thread_Something
-switchD_801b95e4_X_caseD_12:
+switchD_801b95e4_X_caseD_22:
     li r3,0x0
     psq_l f31,0x48(r1),0x0,GQR0_INDEX	# stack
     lfd f31,0x40(r1)	# stack

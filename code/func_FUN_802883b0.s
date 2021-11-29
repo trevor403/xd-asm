@@ -414,13 +414,13 @@ LAB_8028898c:
     mr r5,r31
     bl FUN_802827f4
     lwz r3,0x19a0(r26)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
     lwz r3,0x19a0(r26)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
     cmplwi r23,0x1
     bne LAB_802889d8
     lwz r3,0x19a0(r26)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
 LAB_802889d8:
     cmplwi r24,0x0
     beq LAB_80288a18

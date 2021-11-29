@@ -462,7 +462,7 @@ LAB_801ba910:
     cmplwi r28,0x0
     bne LAB_801ba930
     li r3,0x0
-    b switchD_801ba378_X_caseD_14
+    b switchD_801ba378_X_caseD_24
 LAB_801ba930:
     lha r0,0x10(r31)
     cmpwi r0,0x1
@@ -531,7 +531,7 @@ LAB_801baa04:
     cmplwi r28,0x0
     bne LAB_801baa24
     li r3,0x0
-    b switchD_801ba378_X_caseD_14
+    b switchD_801ba378_X_caseD_24
 LAB_801baa24:
     lha r0,0x10(r31)
     cmpwi r0,0x4
@@ -643,7 +643,7 @@ LAB_801bab80:
     b LAB_801bab9c
 LAB_801bab90:
     addi r3,r31,0x20
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_801bab9c:
     lha r0,0x28(r31)
@@ -934,7 +934,7 @@ LAB_801baf4c:
     bl FUN_800f1e90
 LAB_801baf60:
     li r3,0x0
-switchD_801ba378_X_caseD_14:
+switchD_801ba378_X_caseD_24:
     psq_l f31,0x38(r1),0x0,GQR0_INDEX	# stack
     lfd f31,0x30(r1)	# stack
     lmw r28,0x20(r1)	# stack

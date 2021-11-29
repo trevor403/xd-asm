@@ -17,7 +17,7 @@ ScriptClass_Player:	# 0x801c1930 - 0x801c2927
     subi r0,r27,0x10
     mr r29,r3
     cmplwi r0,0x35
-    bgt switchD_801c1978_X_caseD_36
+    bgt switchD_801c1978_X_caseD_46
     lis r4,-0x7fbf
     rlwinm r0,r0,0x2,0x0,0x1d
     subi r4,r4,0x41a0	# = 801c197c, op 0: switchD_801c1978_X_switchdataD_8040be60
@@ -51,19 +51,19 @@ LAB_801c19bc:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_11:
     bl ScriptFunction_processEvents
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_12:
     bl FUN_8014f5c0
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_13:
     bl FUN_8014f518
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_14:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -160,7 +160,7 @@ LAB_801c1b24:
     mr r5,r30
     mr r6,r27
     bl FUN_8014f384
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_15:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -183,7 +183,7 @@ LAB_801c1b74:
     subfe r0,r0,r3
     rlwinm r3,r0,0x0,0x18,0x1f
     bl FUN_801c7d68
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_16:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -227,14 +227,14 @@ LAB_801c1c00:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_17:
     bl FUN_801c7af0
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_18:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -315,7 +315,7 @@ LAB_801c1d24:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_19:
     lha r0,0x8(r31)
     cmpwi r0,0x23
@@ -334,7 +334,7 @@ LAB_801c1d68:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_1a:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -377,7 +377,7 @@ LAB_801c1dfc:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_1b:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -420,7 +420,7 @@ LAB_801c1e8c:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_1c:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -443,7 +443,7 @@ LAB_801c1edc:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_1d:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -466,19 +466,19 @@ LAB_801c1f28:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_1e:
     bl FUN_801c81fc
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_1f:
     bl FUN_801c8194
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_20:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -498,7 +498,7 @@ LAB_801c1f94:
     bl Script_convertToInt
 LAB_801c1f9c:
     bl FUN_801c816c
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_21:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -521,19 +521,19 @@ LAB_801c1fdc:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_22:
     bl FUN_801c8db8
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_23:
     bl FUN_801c8d2c
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_24:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -564,7 +564,7 @@ LAB_801c2050:
     stw r3,0x14(r4)
     lwz r3,0x914(r28)
     sth r0,0x10(r3)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_25:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -589,16 +589,16 @@ LAB_801c20bc:
     extsh r3,r3
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_26:
     bl FUN_801c8c7c
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_27:
     bl FUN_801cf3a4
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_28:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -627,25 +627,25 @@ LAB_801c212c:
     sth r0,0x0(r30)
     rlwinm r0,r3,0x0,0x18,0x1f
     stw r0,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_29:
     bl FUN_8014c6ec
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_2a:
     bl FUN_8014c674
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_2b:
     bl FUN_8014c5f8
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_2c:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -670,7 +670,7 @@ LAB_801c21cc:
     li r0,0x25
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_2d:
     lha r0,0x8(r31)
     cmpwi r0,0x25
@@ -689,7 +689,7 @@ LAB_801c220c:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_2e:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -709,13 +709,13 @@ LAB_801c2258:
     bl Script_convertToInt
 LAB_801c2260:
     bl FUN_8029e7c0
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_2f:
     bl FUN_80151304
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_30:
     lha r0,0x8(r31)
     cmpwi r0,0x23
@@ -749,7 +749,7 @@ LAB_801c22dc:
     lwz r3,0x0(r27)
     lwz r4,0x4(r27)
     bl FUN_8014dadc
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_36:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -795,10 +795,10 @@ switchD_801c1978_X_caseD_31:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_32:
     bl FUN_8014f010
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_33:
     bl FUN_8028cd60
     bl FUN_8028d0bc
@@ -806,7 +806,7 @@ switchD_801c1978_X_caseD_33:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_34:
     bl FUN_801560ec
     bl FUN_8015651c
@@ -814,24 +814,24 @@ switchD_801c1978_X_caseD_34:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_35:
     bl FUN_80152cf0
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_37:
     bl FUN_801c8530
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_38:
     bl FUN_801c835c
     li r0,0x1
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_39:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -851,7 +851,7 @@ LAB_801c242c:
     bl Script_convertToInt
 LAB_801c2434:
     bl FUN_801cf404
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_3a:
     li r27,0x0
     addi r28,r1,0x24
@@ -958,25 +958,25 @@ LAB_801c2584:
     li r3,0x0
     li r4,0x0
     bl FUN_801cf474
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_3b:
     bl FUN_8014bb08
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_3c:
     bl FUN_801c8650
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_3d:
     bl FUN_801c80fc
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_3e:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -996,7 +996,7 @@ LAB_801c260c:
     bl Script_convertToInt
 LAB_801c2614:
     bl FUN_801c80d0
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_3f:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1016,14 +1016,14 @@ LAB_801c264c:
     bl Script_convertToInt
 LAB_801c2654:
     bl FUN_801c807c
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_40:
     bl FUN_8014bfa8
     li r0,0x1
     rlwinm r3,r3,0x0,0x10,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_41:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1067,7 +1067,7 @@ LAB_801c26ec:
     rlwinm r4,r27,0x0,0x18,0x1f
     rlwinm r5,r0,0x0,0x18,0x1f
     bl FUN_80152a50
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_42:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1090,7 +1090,7 @@ LAB_801c2740:
     subfe r0,r0,r3
     rlwinm r3,r0,0x0,0x18,0x1f
     bl FUN_8014e25c
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_43:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1173,7 +1173,7 @@ LAB_801c2840:
     li r0,0x1
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_44:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1197,7 +1197,7 @@ LAB_801c28a4:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-    b switchD_801c1978_X_caseD_36
+    b switchD_801c1978_X_caseD_46
 switchD_801c1978_X_caseD_45:
     lha r0,0x8(r31)
     cmpwi r0,0x1
@@ -1223,7 +1223,7 @@ LAB_801c28f8:
     rlwinm r3,r3,0x0,0x18,0x1f
     sth r0,0x0(r30)
     stw r3,0x4(r30)
-switchD_801c1978_X_caseD_36:
+switchD_801c1978_X_caseD_46:
     li r3,0x0
     lmw r27,0x4c(r1)	# stack
     lwz r0,0x64(r1)	# stack

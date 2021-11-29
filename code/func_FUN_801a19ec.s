@@ -493,7 +493,7 @@ LAB_801a1f70:
     stw r0,-0x8000(r4)	# op 1: DAT_cc008000
     bl FUN_802b7060
     lwz r3,0x19a0(r31)
-    bl Increment<Q29CrowdMood10CROWD_MOOD>
+    bl FUN_802b5afc
 LAB_801a216c:
     psq_l f31,0x178(r1),0x0,GQR0_INDEX	# stack
     lfd f31,0x170(r1)	# stack

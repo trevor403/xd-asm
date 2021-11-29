@@ -14,7 +14,7 @@ FUN_8014ae00:	# 0x8014ae00 - 0x8014ae33
     lfs f1,-0x6234(r2)	# = -1.0, op 1: FLOAT_804edb8c
     b LAB_8014ae24
 LAB_8014ae20:
-    bl LexicalCast<f,i>
+    bl FUN_8014bd18
 LAB_8014ae24:
     lwz r0,0x14(r1)	# stack
     mtspr LR,r0

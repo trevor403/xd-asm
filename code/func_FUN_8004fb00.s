@@ -16,7 +16,7 @@ FUN_8004fb00:	# 0x8004fb00 - 0x8004fb67
     bl FUN_801cf30c
     cmplwi r3,0x0
     beq LAB_8004fb50
-    bl nlDLRingGetEnd<29DLListEntry<P13BallCacheInfo>>
+    bl FUN_80157b4c
     cmplwi r3,0x0
     beq LAB_8004fb50
     bl FUN_80157a80

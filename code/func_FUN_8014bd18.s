@@ -1,10 +1,10 @@
-# metadata: {"startAddress": "0x8014bd18", "size": 44, "inst": 11, "name": "LexicalCast<f,i>", "endAddress": "0x8014bd43"}
+# metadata: {"startAddress": "0x8014bd18", "size": 44, "inst": 11, "name": "FUN_8014bd18", "endAddress": "0x8014bd43"}
 
 #include "def.h"
 
-### Function: undefined LexicalCast<f,i>(void)
-.global LexicalCast<f,i>
-LexicalCast<f,i>:	# 0x8014bd18 - 0x8014bd43
+### Function: undefined FUN_8014bd18(void)
+.global FUN_8014bd18
+FUN_8014bd18:	# 0x8014bd18 - 0x8014bd43
     stwu r1,-0x10(r1)	# stack
     lis r0,0x4330
     lwz r3,0x24(r3)

@@ -137,7 +137,7 @@ LAB_80241248:
     b LAB_80241264
 LAB_80241258:
     mr r3,r27
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
     fmr f31,f1
 LAB_80241264:
     lha r0,0x0(r29)
@@ -159,7 +159,7 @@ LAB_80241294:
     b LAB_802412ac
 LAB_802412a4:
     mr r3,r29
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_802412ac:
     fmuls f0,f31,f1
     stfs f0,0x4(r28)
@@ -305,7 +305,7 @@ LAB_8024149c:
     b LAB_802414b4
 LAB_802414ac:
     mr r3,r30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_802414b4:
     fmuls f0,f31,f1
     stfs f0,0x8(r1)	# stack
@@ -339,7 +339,7 @@ LAB_80241510:
     b LAB_80241528
 LAB_80241520:
     mr r3,r30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_80241528:
     fmuls f0,f31,f1
     stfs f0,0xc(r1)	# stack
@@ -373,7 +373,7 @@ LAB_80241584:
     b LAB_8024159c
 LAB_80241594:
     mr r3,r30
-    bl FUN_80242024
+    bl __unk_maybe_Script_VarToSingle
 LAB_8024159c:
     fmuls f0,f31,f1
     addi r0,r1,0x8

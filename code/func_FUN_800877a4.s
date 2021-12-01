@@ -56,7 +56,7 @@ LAB_80087844:
 LAB_8008785c:
     li r3,0x35
     li r4,0x0
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     rlwinm r0,r3,0x0,0x18,0x1f
     cmplwi r0,0x0
     bne LAB_80087884

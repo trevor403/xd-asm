@@ -140,4 +140,3 @@ LAB_802b10e0:
     ori r0,r0,0x6
     sth r0,0x0(r3)	# op 1: DAT_804e6d68
     blr
-# SKIPPING RAW FUN_802b10f4 at 0x802b10f4L

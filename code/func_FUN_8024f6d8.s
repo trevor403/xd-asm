@@ -12,4 +12,3 @@ FUN_8024f6d8:	# 0x8024f6d8 - 0x8024f6ef
 LAB_8024f6e8:
     li r3,0x0
     blr
-# SKIPPING RAW FUN_8024f6f0 at 0x8024f6f0L

@@ -35,7 +35,7 @@ FUN_8006530c:	# 0x8006530c - 0x800653e7
     bl FUN_8010efec
     li r3,0x2
     li r4,0x1
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     li r3,0x2
     bl FUN_801156a8
     li r3,0x2

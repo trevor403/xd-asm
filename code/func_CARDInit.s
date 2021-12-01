@@ -41,7 +41,7 @@ LAB_800c0404:
     lis r3,-0x8000	# op 0: DAT_80000000
     bl __CARDSetDiskID
     lis r3,-0x7fc3
-    addi r3,r3,0x2ce0	# = 800c0734, op 0: PTR_LAB_803d2ce0
+    addi r3,r3,0x2ce0	# = 800c0734, op 0: PTR_FUN_803d2ce0
     bl OSRegisterResetFunction
 LAB_800c043c:
     lwz r0,0x1c(r1)	# stack

@@ -35,4 +35,3 @@ LAB_80014d64:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_80014d74 at 0x80014d74L

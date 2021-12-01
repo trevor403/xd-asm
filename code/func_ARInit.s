@@ -26,7 +26,7 @@ LAB_800bcbb4:
     lis r4,-0x7ff4
     stw r0,-0x50f8(r13)	# op 1: DAT_804ead28
     addi r31,r3,0x0
-    subi r4,r4,0x33ac	# op 0: LAB_800bcc54
+    subi r4,r4,0x33ac	# op 0: FUN_800bcc54
     li r3,0x6
     bl __OSSetInterruptHandler
     lis r3,0x200

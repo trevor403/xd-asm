@@ -41,7 +41,7 @@ FUN_80064ad4:	# 0x80064ad4 - 0x80064b9f
     bl FUN_8010efec
     li r3,0xae
     li r4,0x1
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     li r3,0xae
     bl FUN_801156a8
     mr r0,r3

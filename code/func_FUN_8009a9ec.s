@@ -22,7 +22,7 @@ FUN_8009a9ec:	# 0x8009a9ec - 0x8009aad7
     li r3,0xd6
     stb r0,0xc50(r30)
     li r4,0x1
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     li r0,0x0
     li r3,0x1
     stb r0,0xc50(r30)

@@ -282,4 +282,3 @@ LAB_8001e7d0:
     mtspr LR,r0
     addi r1,r1,0x40
     blr
-# SKIPPING RAW FUN_8001e7e4 at 0x8001e7e4L

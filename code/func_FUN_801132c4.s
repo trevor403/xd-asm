@@ -16,4 +16,3 @@ LAB_801132d4:
     stw r7,0x68(r3)
     li r3,0x1
     blr
-# SKIPPING RAW FUN_801132ec at 0x801132ecL

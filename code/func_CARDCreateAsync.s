@@ -133,7 +133,7 @@ LAB_800c4d68:
     bl strncpy	# char * strncpy(char * __dest, char * __src, size_t __n)
     lwz r4,0x1c(r1)	# stack
     lis r3,-0x7ff4
-    addi r5,r3,0x4aa8	# op 0: LAB_800c4aa8
+    addi r5,r3,0x4aa8	# op 0: FUN_800c4aa8
     stw r28,0xc0(r4)
     mr r3,r25
     stw r25,0x0(r28)

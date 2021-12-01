@@ -83,7 +83,7 @@ LAB_800bb2d8:
     stw r0,0x4c(r31)	# op 1: DAT_8043e83c
     bl SIRefreshSamplingRate
     lis r3,-0x7fc3
-    addi r3,r3,0x29f0	# = 800bbf40, op 0: PTR_LAB_803d29f0
+    addi r3,r3,0x29f0	# = 800bbf40, op 0: PTR_FUN_803d29f0
     bl OSRegisterResetFunction
     lis r3,-0x1000
     bl PADReset

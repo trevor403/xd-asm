@@ -8,4 +8,4 @@ powerpc-eabi-ld -o "build/${name}.elf" "build/${name}.o" -T ngc.ld -T func.ld -T
 link=0x$(powerpc-eabi-objdump -j .text -d "build/${name}.elf" | head -7 | tail -1 | cut -d' ' -f1)
 [[ "${link}" == "${addr}" ]]; echo $? $name
 
-powerpc-eabi-objdump -j .text -d "build/${name}.elf"
+# powerpc-eabi-objdump -j .text -d "build/${name}.elf"

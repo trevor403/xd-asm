@@ -12,7 +12,7 @@ FUN_801b711c:	# 0x801b711c - 0x801b7157
     lis r4,-0x7fe5
     subi r3,r3,0x7dd4	# op 0: DAT_8047822c
     li r5,0x0
-    addi r4,r4,0x7158	# = 4Eh    N, op 0: DAT_801b7158
+    addi r4,r4,0x7158	# op 0: FUN_801b7158
     li r6,0x14
     li r7,0x18
     bl __construct_array

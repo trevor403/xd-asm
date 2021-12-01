@@ -41,7 +41,7 @@ FUN_80064a08:	# 0x80064a08 - 0x80064ad3
     bl FUN_8010efec
     li r3,0xae	# op 0: param_1
     li r4,0x1	# op 0: param_2
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     li r3,0xae	# op 0: param_1
     bl FUN_801156a8
     mr r0,r3	# op 1: param_1, op 2: param_1

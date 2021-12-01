@@ -29,4 +29,3 @@ LAB_80135dc0:
 LAB_80135de0:
     stw r4,0x10(r3)
     blr
-# SKIPPING RAW FUN_80135de8 at 0x80135de8L

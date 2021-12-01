@@ -56,7 +56,7 @@ LAB_8029600c:
     rlwinm r0,r7,0x0,0x10,0x1f
     cmplw r4,r0
     bge LAB_80296030
-    lhz r31,0x02(r3)
+    lhz r31,0x2(r3)
     b LAB_8029603c
 LAB_80296030:
     addi r5,r5,0x8

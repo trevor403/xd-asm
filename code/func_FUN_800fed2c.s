@@ -119,4 +119,3 @@ LAB_800feeb8:
     mtspr LR,r0
     addi r1,r1,0xb0
     blr
-# SKIPPING RAW FUN_800feee0 at 0x800feee0L

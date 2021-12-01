@@ -402,7 +402,7 @@ LAB_800c440c:
     li r0,0x0
     lis r3,-0x7ff4
     stw r0,0x28(r4)
-    addi r5,r3,0x3cf0	# op 0: LAB_800c3cf0
+    addi r5,r3,0x3cf0	# op 0: FUN_800c3cf0
     addi r3,r22,0x0
     lwz r6,0x18(r1)	# stack
     lwz r4,0xc(r6)

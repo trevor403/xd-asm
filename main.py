@@ -30,7 +30,7 @@ def main(override):
 
     funcMgr = currentProgram.getFunctionManager()
     funcAddr = currentProgram.getAddressFactory().getAddress("80003100")
-    # funcAddr = getState().getCurrentAddress().getAddress("802abfe4")
+    # funcAddr = getState().getCurrentAddress().getAddress("80158da4")
     # funcAddr = getState().getCurrentAddress().getAddress("8027dbb4")
     funcs = funcMgr.getFunctions(funcAddr, True)
     # funcs = funcMgr.getFunctions(True)
@@ -62,7 +62,8 @@ def main(override):
 
         # # debug
         # if name not in [
-        #     'FUN_80014d74',
+        #     "OSGetGbsMode",
+        #     "OSSetGbsMode",
         # ]: continue
 
         sys.stdout.write(name+"\n")
@@ -118,7 +119,7 @@ def main(override):
         dprint("\n### Function: %s\n.global %s" % (sig, name))
 
         for i, inst in enumerate(insts):
-            # if i < 500: continue
+            # if i < 14: continue
 
             rep = codeUnitFormatASM.getRepresentationString(inst)
             # print(rep)
@@ -156,6 +157,11 @@ def main(override):
                                 comments.append("stack")
                             else:
                                 comments.append("op %d: %s" % (p, current))
+                        elif 'LabelString' in repr(type(current)):
+                            lab = current.toString()
+                            if lab.startswith("DAT_0"):
+                                fixed = hex(int(lab.replace("DAT_", ''),16))
+                                rep = rep.replace(lab, fixed)
 
             # if inst.getNumOperands() > 0:
             #     mnemonic = codeUnitFormatASM.getMnemonicRepresentation(inst)
@@ -193,6 +199,7 @@ def main(override):
             # if i >= 8: break
 
         f.close()
+        # break ## debug only
 
     if not override:
         # global scope

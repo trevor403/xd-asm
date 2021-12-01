@@ -25,7 +25,7 @@ LAB_800b60ac:
     lwz r4,-0x5230(r13)	# op 1: DAT_804eabf0
     addi r0,r3,0x561c
     li r5,0x0
-    stw r0,-0x51f0(r13)	# op 0: LAB_800b561c, op 1: DAT_804eac30
+    stw r0,-0x51f0(r13)	# op 0: FUN_800b561c, op 1: DAT_804eac30
     lis r3,-0x7fbc
     stw r5,-0x5204(r13)	# op 1: DAT_804eac1c
     subi r3,r3,0x1a80

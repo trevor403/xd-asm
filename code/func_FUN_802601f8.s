@@ -23,4 +23,3 @@ FUN_802601f8:	# 0x802601f8 - 0x8026023f
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_80260240 at 0x80260240L

@@ -290,7 +290,7 @@ LAB_800c6d88:
     bl GXSetChanMatColor
     bl GXInvalidateTexAll
     lis r3,-0x7ff4
-    addi r3,r3,0x6140	# op 0: LAB_800c6140
+    addi r3,r3,0x6140	# op 0: FUN_800c6140
     bl FUN_800cbcbc
     lis r3,-0x7ff4
     addi r3,r3,0x623c	# op 0: LAB_800c623c

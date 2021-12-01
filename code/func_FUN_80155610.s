@@ -90,7 +90,7 @@ LAB_80155728:
     li r26,0x0
     b LAB_8015573c
 LAB_80155738:
-    lha r26,0x02(r3)
+    lha r26,0x2(r3)
 LAB_8015573c:
     extsh. r0,r26
     ble LAB_8015576c

@@ -15,4 +15,3 @@ FUN_800b5c2c:	# 0x800b5c2c - 0x800b5c53
     addi r1,r1,0x8
     mtspr LR,r0
     blr
-# SKIPPING RAW FUN_800b5c54 at 0x800b5c54L

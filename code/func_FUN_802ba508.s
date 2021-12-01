@@ -173,5 +173,3 @@ LAB_802ba6e8:
     mtspr LR,r0
     addi r1,r1,0x70
     blr
-# SKIPPING RAW FUN_802ba770 at 0x802ba770L
-# SKIPPING RAW FUN_802baa34 at 0x802baa34L

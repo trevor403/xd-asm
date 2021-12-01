@@ -90,4 +90,3 @@ LAB_801a5cbc:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_801a5cd0 at 0x801a5cd0L

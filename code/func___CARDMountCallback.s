@@ -52,7 +52,7 @@ LAB_800c396c:
     addi r0,r3,0x38d0
     lis r3,-0x7ff4
     stw r0,0xdc(r31)	# op 0: __CARDMountCallback, op 1: DAT_8043e91c
-    subi r5,r3,0xa1c	# op 0: LAB_800bf5e4
+    subi r5,r3,0xa1c	# op 0: FUN_800bf5e4
     addi r3,r28,0x0
     li r4,0x0
     bl EXILock

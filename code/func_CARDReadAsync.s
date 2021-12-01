@@ -74,7 +74,7 @@ LAB_800c51c4:
     addi r31,r3,0x0
     lwz r3,0x0(r29)
     mullw r0,r5,r0
-    addi r7,r4,0x4fb0	# op 0: LAB_800c4fb0
+    addi r7,r4,0x4fb0	# op 0: FUN_800c4fb0
     addi r5,r31,0x0
     addi r6,r30,0x0
     add r4,r8,r0

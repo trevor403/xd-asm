@@ -135,4 +135,3 @@ LAB_8019f294:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW __fsysForegroundTask at 0x8019f2b8L

@@ -188,4 +188,3 @@ LAB_8027332c:
     addi r8,r8,0x14a8
     bdnz LAB_802732cc
     blr
-# SKIPPING RAW FUN_8027333c at 0x8027333cL

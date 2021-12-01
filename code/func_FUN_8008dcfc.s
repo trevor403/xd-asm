@@ -440,4 +440,3 @@ LAB_8008e284:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_8008e2a0 at 0x8008e2a0L

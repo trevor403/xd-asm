@@ -124,5 +124,3 @@ LAB_800eaff4:
     addi r1,r1,0x28
     mtspr LR,r0
     blr
-# SKIPPING RAW SIGetTypeAsync at 0x800eb008L
-# SKIPPING RAW FUN_800eb144 at 0x800eb144L

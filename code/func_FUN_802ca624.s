@@ -44,4 +44,3 @@ FUN_802ca624:	# 0x802ca624 - 0x802ca6bf
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW FUN_802ca6c0 at 0x802ca6c0L

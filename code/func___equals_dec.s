@@ -85,4 +85,3 @@ LAB_800dcca8:
 LAB_800dccb0:
     li r3,0x0
     blr
-# SKIPPING RAW __two_exp at 0x800dccb8L

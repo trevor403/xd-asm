@@ -61,7 +61,7 @@ LAB_800c5744:
 LAB_800c574c:
     lwz r5,0x18(r1)	# stack
     lis r3,-0x7ff4
-    addi r4,r3,0x55e4	# op 0: LAB_800c55e4
+    addi r4,r3,0x55e4	# op 0: FUN_800c55e4
     stw r0,0xd0(r5)	# = 4Eh    N, op 0: DAT_800bf348
     mr r3,r31
     bl __CARDUpdateDir

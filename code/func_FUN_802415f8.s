@@ -312,4 +312,3 @@ LAB_80241a00:
     mtspr LR,r0
     addi r1,r1,0x50
     blr
-# SKIPPING RAW FUN_80241a1c at 0x80241a1cL

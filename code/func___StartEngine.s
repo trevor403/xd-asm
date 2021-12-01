@@ -1,10 +1,10 @@
-# metadata: {"startAddress": "0x8005c71c", "size": 424, "inst": 106, "name": "FUN_8005c71c", "endAddress": "0x8005c8c3"}
+# metadata: {"startAddress": "0x8005c71c", "size": 424, "inst": 106, "name": "__StartEngine", "endAddress": "0x8005c8c3"}
 
 #include "def.h"
 
-### Function: undefined FUN_8005c71c(void)
-.global FUN_8005c71c
-FUN_8005c71c:	# 0x8005c71c - 0x8005c8c3
+### Function: undefined __StartEngine(void)
+.global __StartEngine
+__StartEngine:	# 0x8005c71c - 0x8005c8c3
     stwu r1,-0x20(r1)	# stack
     mfspr r0,LR
     stw r0,0x24(r1)	# stack

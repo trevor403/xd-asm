@@ -31,4 +31,3 @@ LAB_802b72a8:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW GSgfxRenderModuleRegister at 0x802b72c8L

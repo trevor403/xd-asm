@@ -29,4 +29,3 @@ LAB_80129124:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW FUN_80129140 at 0x80129140L

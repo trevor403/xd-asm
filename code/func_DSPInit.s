@@ -24,7 +24,7 @@ DSPInit:	# 0x800be900 - 0x800be9c3
     bl OSDisableInterrupts
     lis r4,-0x7ff4
     addi r31,r3,0x0
-    subi r4,r4,0x153c	# op 0: LAB_800beac4
+    subi r4,r4,0x153c	# op 0: FUN_800beac4
     li r3,0x7
     bl __OSSetInterruptHandler
     lis r3,0x100

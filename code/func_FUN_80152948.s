@@ -83,4 +83,3 @@ LAB_80152a2c:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW FUN_80152a50 at 0x80152a50L

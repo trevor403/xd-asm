@@ -25,7 +25,7 @@ LAB_800c1c58:
     divw r5,r5,r7
     stw r5,0xac(r8)	# op 1: DAT_8043e8ec
     stw r4,0xb0(r8)	# op 1: DAT_8043e8f0
-    mr r4,r0	# op 0: LAB_800c1b40
+    mr r4,r0	# op 0: FUN_800c1b40
     stw r6,0xb4(r8)	# op 1: DAT_8043e8f4
     bl FUN_800c0160
 LAB_800c1c80:

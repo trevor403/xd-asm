@@ -21,7 +21,7 @@ FUN_800bfcf8:	# 0x800bfcf8 - 0x800bfe07
     subi r0,r3,0x308
     lis r3,-0x7ff4
     stw r0,0xdc(r30)	# op 0: FUN_800bfcf8, op 1: DAT_8043e91c
-    subi r5,r3,0xa1c	# op 0: LAB_800bf5e4
+    subi r5,r3,0xa1c	# op 0: FUN_800bf5e4
     addi r3,r31,0x0
     li r4,0x0
     bl EXILock

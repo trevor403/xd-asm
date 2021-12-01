@@ -1,10 +1,10 @@
-# metadata: {"startAddress": "0x801157d4", "size": 208, "inst": 52, "name": "FUN_801157d4", "endAddress": "0x801158a3"}
+# metadata: {"startAddress": "0x801157d4", "size": 208, "inst": 52, "name": "UNK_maybe_windowCheckCursor", "endAddress": "0x801158a3"}
 
 #include "def.h"
 
-### Function: undefined FUN_801157d4(void)
-.global FUN_801157d4
-FUN_801157d4:	# 0x801157d4 - 0x801158a3
+### Function: undefined UNK_maybe_windowCheckCursor(void)
+.global UNK_maybe_windowCheckCursor
+UNK_maybe_windowCheckCursor:	# 0x801157d4 - 0x801158a3
     stwu r1,-0x10(r1)	# stack
     mfspr r0,LR
     stw r0,0x14(r1)	# stack
@@ -19,7 +19,7 @@ LAB_801157f0:
     bne LAB_80115824
     lis r3,-0x7fd1
     lis r4,-0x7fc0
-    addi r3,r3,0x2f80	# = 25h    %, op 0: DAT_802f2f80
+    addi r3,r3,0x2f80	# = "%s(0x%08x)  ",83h,"E",83h,"B",83h,93h,83h,"h",83h,"E",82h,AAh,91h,B6h,8Dh,DDh,82h,B5h,82h,C8h,82h,A2h,"\n", op 0: s_%s(0x%08x)_E_B_h_E_802f2f80
     mr r5,r30
     subi r4,r4,0x3fa8	# = "windowCheckCursor", op 0: s_windowCheckCursor_803fc058
     crxor 4*cr1+eq,4*cr1+eq,4*cr1+eq
@@ -46,7 +46,7 @@ LAB_8011584c:
     bne LAB_80115880
     lis r3,-0x7fd1
     lis r4,-0x7fc0
-    addi r3,r3,0x2fa4	# = 25h    %, op 0: DAT_802f2fa4
+    addi r3,r3,0x2fa4	# = "%s(0x%08x)  ",83h,"X",83h,8Ch,83h,"b",83h,"h",82h,A9h,82h,E7h,8Ch,C4h,82h,D4h,82h,E6h,82h,A4h,82h,C9h,82h,B5h,82h,C4h,82h,ADh,82h,BEh,82h,B3h,82h,A2h,"\n", op 0: s_%s(0x%08x)_X_b_h_802f2fa4
     mr r5,r30
     subi r4,r4,0x3fa8	# = "windowCheckCursor", op 0: s_windowCheckCursor_803fc058
     crxor 4*cr1+eq,4*cr1+eq,4*cr1+eq

@@ -237,7 +237,7 @@ LAB_8005c44c:
     bl FUN_8028b31c
     lis r4,-0x7ffa
     li r3,0x0
-    subi r8,r4,0x38e4	# op 0: FUN_8005c71c
+    subi r8,r4,0x38e4	# op 0: __StartEngine
     li r5,0x4000
     li r4,0x3e8
     li r6,0x1

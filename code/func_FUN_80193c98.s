@@ -184,7 +184,7 @@ LAB_80193e08:
     lwz r0,0x4(r29)
     rlwinm. r0,r0,0x0,0x17,0x17
     beq LAB_80193f7c
-    lfs f0,0x08(r29)
+    lfs f0,0x8(r29)
     fcmpo cr0,f0,f3
     bge LAB_80193f64
     lfs f2,-0x5cf4(r2)	# = 1.0, op 1: FLOAT_804ee0cc
@@ -207,7 +207,7 @@ LAB_80193f64:
     stfs f0,0xc(r29)
     b LAB_80193f98
 LAB_80193f7c:
-    lfs f0,0x08(r29)
+    lfs f0,0x8(r29)
     fcmpo cr0,f0,f3
     bge LAB_80193f90
     stfs f3,0xc(r29)

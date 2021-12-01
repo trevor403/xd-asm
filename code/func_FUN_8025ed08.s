@@ -35,4 +35,3 @@ LAB_8025ed58:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_8025edb4 at 0x8025edb4L

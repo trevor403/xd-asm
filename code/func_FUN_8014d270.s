@@ -161,20 +161,20 @@ LAB_8014d29c:
     subi r10,r9,0x26f4	# op 0: FUN_8014d90c
     lis r8,-0x7feb
     lis r7,-0x7feb
-    subi r9,r8,0x3a50	# op 0: LAB_8014c5b0
+    subi r9,r8,0x3a50	# op 0: FUN_8014c5b0
     lis r6,-0x7feb
     subi r8,r7,0x3a3c	# op 0: FUN_8014c5c4
     lis r4,-0x7feb
-    subi r7,r6,0x3a40	# = 4Eh    N, op 0: DAT_8014c5c0
-    stw r11,0x4(r5)	# = 4Eh    N, op 0: DAT_8014d9b4, op 1: DAT_804479c4
-    subi r6,r4,0x3a48	# op 0: LAB_8014c5b8
+    subi r7,r6,0x3a40	# op 0: FUN_8014c5c0
+    stw r11,0x4(r5)	# op 0: LAB_8014d9b4, op 1: DAT_804479c4
+    subi r6,r4,0x3a48	# op 0: FUN_8014c5b8
     li r3,0x19
     stw r10,0x10(r5)	# op 0: FUN_8014d90c, op 1: DAT_804479d0
     li r4,0x0
-    stw r9,0x18(r5)	# op 0: LAB_8014c5b0, op 1: DAT_804479d8
+    stw r9,0x18(r5)	# op 0: FUN_8014c5b0, op 1: DAT_804479d8
     stw r8,0x1c(r5)	# op 0: FUN_8014c5c4, op 1: DAT_804479dc
-    stw r7,0x20(r5)	# = 4Eh    N, op 0: DAT_8014c5c0, op 1: DAT_804479e0
-    stw r6,0x24(r5)	# op 0: LAB_8014c5b8, op 1: DAT_804479e4
+    stw r7,0x20(r5)	# op 0: FUN_8014c5c0, op 1: DAT_804479e0
+    stw r6,0x24(r5)	# op 0: FUN_8014c5b8, op 1: DAT_804479e4
     stw r0,0x28(r5)	# op 0: LAB_8014c558, op 1: DAT_804479e8
     bl FUN_80125fcc
     stw r3,-0x4c58(r13)	# op 1: DAT_804eb1c8

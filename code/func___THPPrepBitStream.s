@@ -163,4 +163,3 @@ LAB_801e6140:
     lwz r31,0x14(r1)	# stack
     addi r1,r1,0x18
     blr
-# SKIPPING RAW __THPDecompressYUV at 0x801e61fcL

@@ -87,8 +87,8 @@ LAB_8011a398:
     addi r30,r30,0x1
     beq LAB_8011a3bc
     lfs f2,0x0(r28)
-    lfs f1,0x04(r28)
-    lfs f0,0x08(r28)
+    lfs f1,0x4(r28)
+    lfs f0,0x8(r28)
     stfs f2,0x18(r1)	# stack
     stfs f1,0x1c(r1)	# stack
     stfs f0,0x20(r1)	# stack

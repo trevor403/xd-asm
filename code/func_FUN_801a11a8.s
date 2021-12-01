@@ -30,4 +30,3 @@ FUN_801a11a8:	# 0x801a11a8 - 0x801a120b
     mtspr LR,r0
     addi r1,r1,0x30
     blr
-# SKIPPING RAW FUN_801a120c at 0x801a120cL

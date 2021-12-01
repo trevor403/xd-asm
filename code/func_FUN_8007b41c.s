@@ -78,4 +78,3 @@ LAB_8007b504:
     lwzx r0,r3,r0	# op 1: DAT_802eb75c
     stw r0,0x4c(r4)
     blr
-# SKIPPING RAW FUN_8007b520 at 0x8007b520L

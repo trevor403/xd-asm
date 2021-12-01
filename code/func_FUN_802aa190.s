@@ -19,4 +19,3 @@ LAB_802aa1ac:
     subi r0,r4,0x1
     stb r0,0x19b3(r3)
     blr
-# SKIPPING RAW FUN_802aa1c4 at 0x802aa1c4L

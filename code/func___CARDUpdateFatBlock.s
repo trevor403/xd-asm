@@ -32,7 +32,7 @@ __CARDUpdateFatBlock:	# 0x800c1fe8 - 0x800c2093
     bl DCStoreRange
     stw r30,0xd8(r31)	# op 1: DAT_8043e918
     lis r3,-0x7ff4
-    addi r5,r3,0x1d6c	# op 0: LAB_800c1d6c
+    addi r5,r3,0x1d6c	# op 0: FUN_800c1d6c
     lwz r0,0x80(r31)	# op 1: DAT_8043e8c0
     mr r3,r28
     lwz r4,0xc(r31)	# op 1: DAT_8043e84c

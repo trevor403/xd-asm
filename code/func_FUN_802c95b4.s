@@ -30,4 +30,3 @@ LAB_802c95f8:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_802c960c at 0x802c960cL

@@ -730,13 +730,13 @@ LAB_800c158c:
     lis r3,-0x7ff4
     li r5,0x10
     stw r27,0x14(r30)	# op 1: DAT_8043e884
-    addi r4,r4,0x166c	# op 0: LAB_800c166c
+    addi r4,r4,0x166c	# op 0: FUN_800c166c
     addi r0,r3,0x16dc
     sth r5,0x24(r30)	# op 1: DAT_8043e894
     mr r3,r30
-    stw r4,0x28(r30)	# op 0: LAB_800c166c, op 1: DAT_8043e898
+    stw r4,0x28(r30)	# op 0: FUN_800c166c, op 1: DAT_8043e898
     stw r27,0x2c(r30)	# op 1: DAT_8043e89c
-    stw r0,0x30(r30)	# op 0: LAB_800c16dc, op 1: DAT_8043e8a0
+    stw r0,0x30(r30)	# op 0: FUN_800c16dc, op 1: DAT_8043e8a0
     stw r27,0x34(r30)	# op 1: DAT_8043e8a4
     bl DSPAddTask
     stw r25,0x0(r23)

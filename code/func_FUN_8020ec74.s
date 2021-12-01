@@ -44,4 +44,3 @@ LAB_8020ecf0:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_8020ed04 at 0x8020ed04L

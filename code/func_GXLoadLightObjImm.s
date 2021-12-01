@@ -36,5 +36,3 @@ GXLoadLightObjImm:	# 0x800caf10 - 0x800caf8b
     li r0,0x1
     sth r0,0x2(r3)	# offset DAT_8043eb02 &0xff, op 1: 0xff
     blr
-# SKIPPING RAW GXSetChanAmbColor at 0x800caf8cL
-# SKIPPING RAW GXSetChanMatColor at 0x800cb074L

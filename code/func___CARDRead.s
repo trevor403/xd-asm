@@ -24,7 +24,7 @@ LAB_800c1b0c:
     stw r0,0xac(r8)	# op 1: DAT_8043e8ec
     addi r0,r5,0x1a00
     stw r4,0xb0(r8)	# op 1: DAT_8043e8f0
-    mr r4,r0	# op 0: LAB_800c1a00
+    mr r4,r0	# op 0: FUN_800c1a00
     stw r6,0xb4(r8)	# op 1: DAT_8043e8f4
     bl __CARDReadSegment
 LAB_800c1b30:

@@ -63,7 +63,7 @@ LAB_800651f4:
 LAB_80065244:
     mr r3,r31
     li r4,0x1
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     mr r3,r31
     bl FUN_801156a8
     extsb r30,r3

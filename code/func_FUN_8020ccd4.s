@@ -44,4 +44,3 @@ FUN_8020ccd4:	# 0x8020ccd4 - 0x8020cd6f
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_8020cd70 at 0x8020cd70L

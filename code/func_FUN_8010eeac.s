@@ -53,7 +53,7 @@ LAB_8010eef4:
     beq LAB_8010efb8
     mr r3,r31
     mr r4,r28
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     mr r3,r31
     bl FUN_801156a8
     mr r0,r3

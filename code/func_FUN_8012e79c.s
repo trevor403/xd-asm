@@ -112,5 +112,3 @@ LAB_8012e8e8:
     mtspr LR,r0
     addi r1,r1,0x30
     blr
-# SKIPPING RAW FUN_8012e930 at 0x8012e930L
-# SKIPPING RAW FUN_8012ec64 at 0x8012ec64L

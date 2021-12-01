@@ -19,7 +19,7 @@ ARQInit:	# 0x800be6c0 - 0x800be72f
     stw r31,-0x50d0(r13)	# op 1: DAT_804ead50
     lis r3,-0x7ff4
     stw r31,-0x50d8(r13)	# op 1: DAT_804ead48
-    subi r3,r3,0x1a0c	# op 0: LAB_800be5f4
+    subi r3,r3,0x1a0c	# op 0: FUN_800be5f4
     stw r0,-0x50b8(r13)	# op 1: DAT_804ead68
     bl FUN_800bca10
     li r0,0x1

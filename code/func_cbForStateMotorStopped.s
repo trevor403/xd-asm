@@ -59,7 +59,7 @@ LAB_800b64a4:
     mulhwu r0,r4,r0
     rlwinm r0,r0,0x1a,0x6,0x1f
     mulli r6,r0,0x47e
-    addi r7,r3,0x6240	# op 0: LAB_800b6240
+    addi r7,r3,0x6240	# op 0: FUN_800b6240
     addi r3,r31,0x70	# op 0: DAT_8043e5f0
     li r5,0x0
     bl OSSetAlarm

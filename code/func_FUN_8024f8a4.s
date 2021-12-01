@@ -100,4 +100,3 @@ LAB_8024f9d0:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW FUN_8024f9f0 at 0x8024f9f0L

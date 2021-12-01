@@ -61,7 +61,7 @@ LAB_800c00bc:
     beq LAB_800c0124
     lis r3,-0x7ff4
     lwz r4,0xb4(r31)	# op 1: DAT_8043e8f4
-    subi r7,r3,0xac4	# op 0: LAB_800bf53c
+    subi r7,r3,0xac4	# op 0: FUN_800bf53c
     lwz r6,0xa4(r31)	# op 1: DAT_8043e8e4
     addi r3,r30,0x0
     li r5,0x200

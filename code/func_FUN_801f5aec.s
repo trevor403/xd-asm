@@ -10,7 +10,7 @@ FUN_801f5aec:	# 0x801f5aec - 0x801f5b33
     lis r4,-0x7fe1
     li r5,0x0
     stw r0,0x14(r1)	# stack
-    addi r4,r4,0x5b34	# = 4Eh    N, op 0: DAT_801f5b34
+    addi r4,r4,0x5b34	# op 0: FUN_801f5b34
     li r6,0x3744
     li r7,0x2
     stw r31,0xc(r1)	# stack

@@ -59,7 +59,7 @@ LAB_800c5580:
 LAB_800c5588:
     lwz r4,0x1c(r1)	# stack
     lis r3,-0x7ff4
-    addi r5,r3,0x5420	# op 0: LAB_800c5420
+    addi r5,r3,0x5420	# op 0: FUN_800c5420
     stw r0,0xd0(r4)	# = 4Eh    N, op 0: DAT_800bf348
     lwz r3,0x1c(r1)	# stack
     stw r31,0xb4(r3)

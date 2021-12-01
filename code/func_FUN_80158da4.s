@@ -22,5 +22,5 @@ LAB_80158dcc:
     li r3,0x0
     blr
 LAB_80158ddc:
-    lhz r3,0x04(r3)
+    lhz r3,0x4(r3)
     blr

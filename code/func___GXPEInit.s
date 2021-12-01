@@ -8,12 +8,12 @@ __GXPEInit:	# 0x800c9d84 - 0x800c9df7
     mfspr r0,LR
     lis r3,-0x7ff3
     stw r0,0x4(r1)	# stack
-    subi r4,r3,0x63c8	# op 0: LAB_800c9c38
+    subi r4,r3,0x63c8	# op 0: FUN_800c9c38
     li r3,0x12
     stwu r1,-0x8(r1)	# stack
     bl __OSSetInterruptHandler
     lis r3,-0x7ff3
-    subi r4,r3,0x62fc	# op 0: LAB_800c9d04
+    subi r4,r3,0x62fc	# op 0: FUN_800c9d04
     li r3,0x13
     bl __OSSetInterruptHandler
     subi r3,r13,0x5034	# op 0: DAT_804eadec

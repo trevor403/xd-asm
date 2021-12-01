@@ -10,7 +10,7 @@ FUN_8011867c:	# 0x8011867c - 0x801186bf
     lis r4,-0x7fee
     li r5,0x0
     stw r0,0x14(r1)	# stack
-    subi r4,r4,0x7940	# = 4Eh    N, op 0: DAT_801186c0
+    subi r4,r4,0x7940	# op 0: LAB_801186c0
     li r6,0x28
     li r7,0x40
     stw r31,0xc(r1)	# stack

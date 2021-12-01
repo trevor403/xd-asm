@@ -78,7 +78,7 @@ LAB_8009cfb0:
 LAB_8009cfe0:
     mr r3,r31
     li r4,0x1
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     mr r3,r31
     bl FUN_801156a8
     mr r0,r3

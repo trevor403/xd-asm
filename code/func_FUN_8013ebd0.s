@@ -100,4 +100,3 @@ LAB_8013ed04:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW FUN_8013ed18 at 0x8013ed18L

@@ -27,7 +27,7 @@ ARQPostRequest:	# 0x800be730 - 0x800be88b
 LAB_800be77c:
     lis r3,-0x7ff4
     subi r0,r3,0x1a10
-    stw r0,0x1c(r29)	# = 4Eh    N, op 0: DAT_800be5f0
+    stw r0,0x1c(r29)	# op 0: FUN_800be5f0
 LAB_800be788:
     bl OSDisableInterrupts
     cmpwi r30,0x1

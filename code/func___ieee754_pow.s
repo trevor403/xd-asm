@@ -575,4 +575,3 @@ LAB_800e4a68:
     mtspr LR,r0
     addi r1,r1,0xb0
     blr
-# SKIPPING RAW __ieee754_rem_pio2 at 0x800e4aa0L

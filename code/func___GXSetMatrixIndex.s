@@ -40,4 +40,3 @@ LAB_800cf81c:
     li r0,0x1
     sth r0,0x2(r3)	# offset DAT_8043eb02 &0xff, op 1: 0xff
     blr
-# SKIPPING RAW GXSetGPMetric at 0x800cf82cL

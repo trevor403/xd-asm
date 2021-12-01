@@ -75,7 +75,7 @@ AIInit:	# 0x800bc540 - 0x800bc6ab
     bl AISetDSPSampleRate
     lis r3,-0x7ff4
     stw r31,-0x5138(r13)	# op 1: DAT_804eace8
-    subi r4,r3,0x38d8	# op 0: LAB_800bc728
+    subi r4,r3,0x38d8	# op 0: FUN_800bc728
     stw r31,-0x5134(r13)	# op 1: DAT_804eacec
     li r3,0x5
     stw r30,-0x5130(r13)	# op 1: DAT_804eacf0
@@ -83,7 +83,7 @@ AIInit:	# 0x800bc540 - 0x800bc6ab
     lis r3,0x400
     bl __OSUnmaskInterrupts
     lis r3,-0x7ff4
-    subi r4,r3,0x3954	# op 0: LAB_800bc6ac
+    subi r4,r3,0x3954	# op 0: FUN_800bc6ac
     li r3,0x8
     bl __OSSetInterruptHandler
     lis r3,0x80

@@ -26,6 +26,3 @@ LAB_80101e40:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_80101e54 at 0x80101e54L
-# SKIPPING RAW Maybe_GStextureInit at 0x80102404L
-# SKIPPING RAW FUN_80102bcc at 0x80102bccL

@@ -38,7 +38,7 @@ LAB_802964f0:
 LAB_802964f4:
     cmplwi r3,0x0
     beq LAB_80296514
-    lhz r0,0x02(r3)
+    lhz r0,0x2(r3)
     addi r4,r4,0x8
     addi r6,r6,0x1
     stw r0,0x0(r5)	# stack

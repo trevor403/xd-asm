@@ -42,12 +42,12 @@ __OSThreadInit:	# 0x800b0fac - 0x800b1103
     lis r3,-0x7fb1
     stw r0,0x71c(r28)	# op 1: DAT_8043e1d4
     subi r0,r3,0x27c
-    stw r0,0x720(r28)	# op 0: DAT_804efd84, op 1: DAT_8043e1d8
+    stw r0,0x720(r28)	# op 0: creepy_var, op 1: DAT_8043e1d8
     lis r3,-0x2152
     subi r0,r3,0x4542
     lwz r3,0x720(r28)	# op 1: DAT_8043e1d8
     mr r4,r31	# op 0: DAT_8043ded0
-    stw r0,0x0(r3)	# op 1: DAT_804efd84
+    stw r0,0x0(r3)	# op 1: creepy_var
     lwz r12,-0x7ce8(r13)	# = 800b0fa8, op 1: ->FUN_800b0fa8
     lwz r3,0xe4(r30)	# offset gCurrentThread &0xff, op 1: 0xff
     mtspr LR,r12

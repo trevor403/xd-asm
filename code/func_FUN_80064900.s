@@ -54,7 +54,7 @@ LAB_80064990:
 LAB_800649b4:
     li r3,0xae	# op 0: param_1
     li r4,0x0	# op 0: param_2
-    bl FUN_801157d4
+    bl UNK_maybe_windowCheckCursor
     rlwinm r0,r3,0x0,0x18,0x1f	# op 1: param_1
     cmplwi r0,0x0
     bne LAB_80064990

@@ -31,7 +31,7 @@ LAB_8019c424:
     beq LAB_8019c468
     lwz r4,0x1c(r31)
     lis r3,-0x7fe6
-    subi r9,r3,0x3b78	# = 4Eh    N, op 0: DAT_8019c488
+    subi r9,r3,0x3b78	# op 0: FUN_8019c488
     lwz r5,0x20(r31)
     lwz r7,0x8(r4)
     mr r3,r31

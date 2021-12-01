@@ -37,5 +37,3 @@ LAB_801e2588:
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_801e25a8 at 0x801e25a8L
-# SKIPPING RAW GSmovieDaemonThread__movieDaemon__Fv at 0x801e2b04L

@@ -252,7 +252,7 @@ LAB_8017ce48:
     lwz r6,0x8(r4)	# op 1: DAT_80469e10
     b LAB_8017ce88
 LAB_8017ce74:
-    lfs f0,0x04(r6)
+    lfs f0,0x4(r6)
     fcmpo cr0,f0,f1
     bgt LAB_8017ce90
     mr r5,r6

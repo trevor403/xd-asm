@@ -12,4 +12,3 @@ FUN_801da094:	# 0x801da094 - 0x801da0af
     lfs f0,0x14(r3)
     stfs f0,0x8(r4)
     blr
-# SKIPPING RAW FUN_801da0b0 at 0x801da0b0L

@@ -8,7 +8,7 @@ DVDCancel:	# 0x800b7a70 - 0x800b7b1b
     mfspr r0,LR
     lis r4,-0x7ff5
     stw r0,0x4(r1)	# stack
-    addi r4,r4,0x7b1c	# op 0: LAB_800b7b1c
+    addi r4,r4,0x7b1c	# op 0: FUN_800b7b1c
     stwu r1,-0x18(r1)	# stack
     stw r31,0x14(r1)	# stack
     stw r30,0x10(r1)	# stack

@@ -111,4 +111,3 @@ LAB_800ef50c:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW FUN_800ef52c at 0x800ef52cL

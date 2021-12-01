@@ -42,4 +42,3 @@ LAB_800e1de4:
     mtspr LR,r0
     addi r1,r1,0x20
     blr
-# SKIPPING RAW __strtold at 0x800e1df4L

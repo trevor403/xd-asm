@@ -16,4 +16,3 @@ FUN_800a0960:	# 0x800a0960 - 0x800a098b
     mtspr LR,r0
     addi r1,r1,0x10
     blr
-# SKIPPING RAW FUN_800a098c at 0x800a098cL

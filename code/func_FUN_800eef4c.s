@@ -7,4 +7,3 @@
 FUN_800eef4c:	# 0x800eef4c - 0x800eef53
     lhz r3,0x2(r3)
     blr
-# SKIPPING RAW FUN_800eef54 at 0x800eef54L

@@ -7,4 +7,3 @@
 __get_debug_bba:	# 0x8000314c - 0x80003153
     lbz r3,-0x52b0(r13)	# op 1: DAT_804eab70
     blr
-# SKIPPING RAW __start at 0x80003154L

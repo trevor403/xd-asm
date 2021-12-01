@@ -25,7 +25,7 @@ LAB_800b0e34:
     addi r3,r31,0x14
     stw r0,0x0(r4)	# op 1: DAT_8043daa8
 LAB_800b0e44:
-    lhz r31,DAT_00000028(r3)
+    lhz r31,0x28(r3)
     li r3,0x0
     li r4,0x14
     bl UnlockSram

@@ -98,7 +98,7 @@ LAB_8024df48:
     bl HSD_Assert
 LAB_8024df88:
     lfs f1,0x8(r30)
-    lfs f0,DAT_0000002c(r31)
+    lfs f0,0x2c(r31)
     lwz r0,0x4(r30)
     fmuls f0,f1,f0
     lfs f1,0x7c(r1)	# stack

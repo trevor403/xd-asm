@@ -278,7 +278,7 @@ LAB_802443dc:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_802443f4:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     stfs f0,0xc(r1)	# stack
     b LAB_8024440c
 LAB_80244400:
@@ -310,7 +310,7 @@ LAB_80244440:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_80244458:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     fctiwz f0,f0
     stfd f0,0x18(r1)	# stack
     lwz r0,0x1c(r1)	# stack
@@ -344,7 +344,7 @@ LAB_802444b8:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_802444d0:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     fneg f0,f0
     stfs f0,0x10(r1)	# stack
     lwz r0,0x10(r1)	# stack
@@ -396,7 +396,7 @@ LAB_80244564:
     bl HSD_Assert
 LAB_8024457c:
     lfd f1,-0x5000(r2)	# = 0.017453292519943295, op 1: DOUBLE_804eedc0
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     fmul f1,f1,f0
     frsp f1,f1
     bl sin	# double sin(double __x)
@@ -414,7 +414,7 @@ LAB_802445a4:
     bl HSD_Assert
 LAB_802445bc:
     lfd f1,-0x5000(r2)	# = 0.017453292519943295, op 1: DOUBLE_804eedc0
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     fmul f1,f1,f0
     frsp f1,f1
     bl FUN_800e63c0
@@ -432,7 +432,7 @@ LAB_802445e4:
     bl HSD_Assert
 LAB_802445fc:
     lfd f1,-0x5000(r2)	# = 0.017453292519943295, op 1: DOUBLE_804eedc0
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     fmul f1,f1,f0
     frsp f1,f1
     bl tan	# double tan(double __x)
@@ -449,7 +449,7 @@ LAB_80244624:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_8024463c:
-    lfs f1,DAT_00000004(r24)
+    lfs f1,0x04(r24)
     bl FUN_800e6a98
     frsp f1,f1
     lfd f0,-0x4ff8(r2)	# = 57.29577951308232, op 1: DOUBLE_804eedc8
@@ -467,7 +467,7 @@ LAB_80244664:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_8024467c:
-    lfs f1,DAT_00000004(r24)
+    lfs f1,0x04(r24)
     bl FUN_800e6a78
     frsp f1,f1
     lfd f0,-0x4ff8(r2)	# = 57.29577951308232, op 1: DOUBLE_804eedc8
@@ -485,7 +485,7 @@ LAB_802446a4:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_802446bc:
-    lfs f1,DAT_00000004(r24)
+    lfs f1,0x04(r24)
     bl atan	# double atan(double __x)
     frsp f1,f1
     lfd f0,-0x4ff8(r2)	# = 57.29577951308232, op 1: DOUBLE_804eedc8
@@ -503,7 +503,7 @@ LAB_802446e4:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_802446fc:
-    lfs f1,DAT_00000004(r24)
+    lfs f1,0x04(r24)
     bl FUN_800e6b18
     frsp f0,f1
     stfs f0,0x10(r1)	# stack
@@ -518,7 +518,7 @@ LAB_80244718:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_80244730:
-    lfs f1,DAT_00000004(r24)
+    lfs f1,0x04(r24)
     bl FUN_800e6ad8
     frsp f0,f1
     stfs f0,0x10(r1)	# stack
@@ -533,7 +533,7 @@ LAB_8024474c:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_80244764:
-    lfs f1,DAT_00000004(r24)
+    lfs f1,0x04(r24)
     lfs f0,-0x5010(r2)	# = 0.0, op 1: FLOAT_804eedb0
     fcmpo cr0,f1,f0
     bge LAB_80244080
@@ -564,7 +564,7 @@ LAB_802447b8:
     subi r5,r2,0x5008	# = "stack", op 0: s_stack_804eedb8
     bl HSD_Assert
 LAB_802447d0:
-    lfs f4,DAT_00000004(r24)
+    lfs f4,0x04(r24)
     lfs f0,-0x5010(r2)	# = 0.0, op 1: FLOAT_804eedb0
     fcmpo cr0,f4,f0
     ble LAB_80244828
@@ -661,7 +661,7 @@ LAB_80244900:
     li r4,0x1f5
     bl HSD_Assert
 LAB_8024491c:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -689,7 +689,7 @@ LAB_80244964:
     li r4,0x1fb
     bl HSD_Assert
 LAB_80244980:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -717,7 +717,7 @@ LAB_802449c8:
     li r4,0x201
     bl HSD_Assert
 LAB_802449e4:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -745,7 +745,7 @@ LAB_80244a2c:
     li r4,0x207
     bl HSD_Assert
 LAB_80244a48:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -773,7 +773,7 @@ LAB_80244a90:
     li r4,0x20d
     bl HSD_Assert
 LAB_80244aac:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -924,7 +924,7 @@ LAB_80244ca4:
     li r4,0x22c
     bl HSD_Assert
 LAB_80244cc0:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -953,7 +953,7 @@ LAB_80244d0c:
     li r4,0x232
     bl HSD_Assert
 LAB_80244d28:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -981,7 +981,7 @@ LAB_80244d70:
     li r4,0x239
     bl HSD_Assert
 LAB_80244d8c:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -1059,7 +1059,7 @@ LAB_80244e84:
     li r4,0x24e
     bl HSD_Assert
 LAB_80244ea0:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -1104,7 +1104,7 @@ LAB_80244f20:
     li r4,0x254
     bl HSD_Assert
 LAB_80244f3c:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -1132,7 +1132,7 @@ LAB_80244f84:
     li r4,0x259
     bl HSD_Assert
 LAB_80244fa0:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -1160,7 +1160,7 @@ LAB_80244fe8:
     li r4,0x25e
     bl HSD_Assert
 LAB_80245004:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -1189,7 +1189,7 @@ LAB_80245050:
     li r4,0x263
     bl HSD_Assert
 LAB_8024506c:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -1218,7 +1218,7 @@ LAB_802450b8:
     li r4,0x268
     bl HSD_Assert
 LAB_802450d4:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338
@@ -1246,7 +1246,7 @@ LAB_8024511c:
     li r4,0x26d
     bl HSD_Assert
 LAB_80245138:
-    lfs f0,DAT_00000004(r24)
+    lfs f0,0x04(r24)
     mr r3,r24
     stfs f0,0xc(r1)	# stack
     bl FUN_80253338

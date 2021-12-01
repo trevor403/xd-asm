@@ -37,7 +37,7 @@ LAB_800b0ecc:
     addi r4,r31,0x14
     stw r0,0x0(r5)	# op 1: DAT_8043daa8
 LAB_800b0edc:
-    lhz r0,DAT_00000028(r4)
+    lhz r0,0x28(r4)
     rlwinm r3,r30,0x0,0x10,0x1f
     cmplw r3,r0
     bne LAB_800b0efc

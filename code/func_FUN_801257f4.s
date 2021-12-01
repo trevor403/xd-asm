@@ -49,8 +49,8 @@ LAB_80125880:
     li r5,0x44
     li r6,0x0
     li r7,0x0
-    lhz r3,DAT_00000004(r4)
-    lhz r4,DAT_00000006(r4)
+    lhz r3,0x04(r4)
+    lhz r4,0x06(r4)
     bl Maybe_GStextureInit
     cmplwi r3,0x0
     stw r3,-0x4cdc(r13)	# op 1: DAT_804eb144

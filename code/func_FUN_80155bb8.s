@@ -240,7 +240,7 @@ LAB_80155ea4:
     li r29,0x0
     b LAB_80155eb8
 LAB_80155eb4:
-    lha r29,DAT_00000002(r3)
+    lha r29,0x02(r3)
 LAB_80155eb8:
     extsh. r0,r29
     ble LAB_80155ee8

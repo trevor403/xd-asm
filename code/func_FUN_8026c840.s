@@ -58,7 +58,7 @@ LAB_8026c8d8:
     mr r3,r4
     bl FUN_80255de4
 LAB_8026c8f0:
-    lhz r3,DAT_00000016(r30)
+    lhz r3,0x16(r30)
     cmplwi r3,0x0
     beq LAB_8026c9a0
     addi r0,r3,0x1
@@ -99,7 +99,7 @@ LAB_8026c970:
     stwx r28,r3,r27
     addi r27,r27,0x4
 LAB_8026c980:
-    lhz r0,DAT_00000016(r30)
+    lhz r0,0x16(r30)
     cmpw r26,r0
     blt LAB_8026c918
     lwz r3,0x6c(r31)

@@ -31,7 +31,7 @@ LAB_800ff494:
     stw r0,0x1280(r3)
     sth r0,0x12e2(r3)
     stw r0,0x1284(r3)
-    stw r0,DAT_000018a8(r3)
+    stw r0,0x18a8(r3)
     sth r0,0x190a(r3)
     stw r0,0x18ac(r3)
     stw r0,0x1ed0(r3)

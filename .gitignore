@@ -1,2 +1,5 @@
-code.elf
-code.o
+.vscode/
+issues.txt
+*.elf
+*.o
+*.log

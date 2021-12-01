@@ -674,7 +674,7 @@ LAB_80254d98:
 LAB_80254d9c:
     cmplwi r28,0x0
     beq LAB_80255028
-    lhz r3,DAT_00000008(r28)
+    lhz r3,0x08(r28)
     rlwinm. r0,r3,0x0,0x1c,0x1c
     beq LAB_80255028
     andi. r0,r3,0x14
@@ -734,13 +734,13 @@ LAB_80254e2c:
     stfs f0,0x38(r28)
     lfs f0,-0x4d60(r2)	# = 0.5, op 1: FLOAT_804ef060
     fmr f2,f1
-    lfs f4,DAT_00000038(r28)
+    lfs f4,0x38(r28)
     fmr f5,f1
     lfs f3,-0x4d6c(r2)	# = 1.0, op 1: FLOAT_804ef054
     fmuls f4,f4,f0
     fsubs f6,f3,f4
     bl GXInitLightAttn
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     rlwinm r0,r0,0x0,0x1e,0x1f
     cmpwi r0,0x1
     beq LAB_80254ec8
@@ -805,19 +805,19 @@ LAB_80254f60:
     li r0,-0x1
     b LAB_80254fc4
 LAB_80254f68:
-    lfs f0,DAT_0000003c(r28)
+    lfs f0,0x3c(r28)
     lis r3,-0x7fb1
     lfs f1,-0x7cf0(r3)	# = 00800000h, op 1: DAT_804e8310
     fabs f0,f0
     fcmpo cr0,f0,f1
     cror eq,lt,eq
     bne LAB_80254fb4
-    lfs f0,DAT_00000040(r28)
+    lfs f0,0x40(r28)
     fabs f0,f0
     fcmpo cr0,f0,f1
     cror eq,lt,eq
     bne LAB_80254fb4
-    lfs f0,DAT_00000044(r28)
+    lfs f0,0x44(r28)
     fabs f0,f0
     fcmpo cr0,f0,f1
     cror eq,lt,eq
@@ -852,7 +852,7 @@ LAB_80255000:
     subi r5,r2,0x4d7c	# = 30h    0, op 0: DAT_804ef044
     bl HSD_Assert
 LAB_80255010:
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     ori r0,r0,0x100
     sth r0,0x8(r28)
     lwz r0,-0x43c8(r13)	# op 1: DAT_804eba58
@@ -881,10 +881,10 @@ LAB_80255060:
 LAB_80255064:
     cmplwi r28,0x0
     beq LAB_80255190
-    lhz r4,DAT_00000008(r28)
+    lhz r4,0x08(r28)
     lwz r3,0x10(r28)
     rlwinm. r0,r4,0x0,0x1a,0x1a
-    lfs f29,DAT_00000038(r28)
+    lfs f29,0x38(r28)
     stw r3,0x1c(r1)	# stack
     bne LAB_80255190
     rlwinm. r0,r4,0x0,0x1e,0x1f
@@ -915,24 +915,24 @@ LAB_802550d4:
     bl GXInitLightColor
     lwz r0,0x1c(r1)	# stack
     stw r0,0x14(r28)
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     ori r0,r0,0x80
     sth r0,0x8(r28)
 LAB_802550fc:
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     rlwinm. r0,r0,0x0,0x18,0x18
     beq LAB_80255120
     lwz r4,0x4c(r28)
     addi r3,r28,0x50
     bl GXLoadLightObjImm
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     rlwinm r0,r0,0x0,0x19,0x17
     sth r0,0x8(r28)
 LAB_80255120:
     lwz r0,0x90(r28)
     cmpwi r0,0x0
     beq LAB_80255190
-    lfs f0,DAT_00000038(r28)
+    lfs f0,0x38(r28)
     fcmpu cr0,f0,f29
     beq LAB_8025516c
     lfs f0,-0x4d60(r2)	# = 0.5, op 1: FLOAT_804ef060
@@ -945,17 +945,17 @@ LAB_80255120:
     fmr f5,f1
     fsubs f6,f3,f4
     bl GXInitLightAttn
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     ori r0,r0,0x100
     sth r0,0x8(r28)
 LAB_8025516c:
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     rlwinm. r0,r0,0x0,0x17,0x17
     beq LAB_80255190
     lwz r4,0x90(r28)
     addi r3,r28,0x94
     bl GXLoadLightObjImm
-    lhz r0,DAT_00000008(r28)
+    lhz r0,0x08(r28)
     rlwinm r0,r0,0x0,0x18,0x16
     sth r0,0x8(r28)
 LAB_80255190:

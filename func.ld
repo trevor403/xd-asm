@@ -3421,6 +3421,8 @@ FUN_800d20a0 = 0x800d20a0;
 FUN_800d27f4 = 0x800d27f4;
 FUN_800d3910 = 0x800d3910;
 FUN_800d39c8 = 0x800d39c8;
+
+/* MetroTRK start */
 TRKNubMainLoop = 0x800d39d0;
 FUN_800d3ac8 = 0x800d3ac8;
 TRKConstructEvent = 0x800d3aec;
@@ -3561,6 +3563,8 @@ TRK_Log = 0x800d9b88;
 FUN_800d9bd8 = 0x800d9bd8;
 MWEnterCriticalSection = 0x800d9bfc;
 FUN_800d9c2c = 0x800d9c2c;
+/* MetroTRK end */
+
 __va_arg = 0x800d9c30;
 FUN_800d9cf8 = 0x800d9cf8;
 __destroy_new_array = 0x800d9d28;
@@ -3611,6 +3615,7 @@ FUN_800da8c0 = 0x800da8c0;
 __unregister_fragment = 0x800da8fc;
 __register_fragment = 0x800da930;
 __sys_free = 0x800da964;
+__exit = 0x800daa1c;
 free = 0x800dab0c;
 __pool_free = 0x800dab7c;
 deallocate_from_fixed_pools = 0x800dabd4;

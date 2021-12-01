@@ -184,7 +184,7 @@ LAB_80193e08:
     lwz r0,0x4(r29)
     rlwinm. r0,r0,0x0,0x17,0x17
     beq LAB_80193f7c
-    lfs f0,DAT_00000008(r29)
+    lfs f0,0x08(r29)
     fcmpo cr0,f0,f3
     bge LAB_80193f64
     lfs f2,-0x5cf4(r2)	# = 1.0, op 1: FLOAT_804ee0cc
@@ -207,7 +207,7 @@ LAB_80193f64:
     stfs f0,0xc(r29)
     b LAB_80193f98
 LAB_80193f7c:
-    lfs f0,DAT_00000008(r29)
+    lfs f0,0x08(r29)
     fcmpo cr0,f0,f3
     bge LAB_80193f90
     stfs f3,0xc(r29)
@@ -233,7 +233,7 @@ LAB_80193f98:
 LAB_80193fd0:
     li r4,0x0
     stw r4,0x4c(r29)
-    lhz r0,DAT_00000012(r29)
+    lhz r0,0x12(r29)
     rlwinm r0,r0,0x0,0x1c,0x1f
     cmplwi r0,0x8
     bgt switchD_80193ffc_X_caseD_9
@@ -334,7 +334,7 @@ switchD_80193ffc_X_caseD_5:
     lfs f0,0x30(r3)
     fcmpo cr0,f0,f1
     bge LAB_80194158
-    lhz r0,DAT_00000084(r29)
+    lhz r0,0x84(r29)
     ori r0,r0,0x1
     sth r0,0x84(r29)
 LAB_80194158:
@@ -344,7 +344,7 @@ LAB_80194158:
     lfs f1,0x34(r3)
     fcmpo cr0,f1,f0
     bge LAB_8019417c
-    lhz r0,DAT_00000084(r29)
+    lhz r0,0x84(r29)
     ori r0,r0,0x2
     sth r0,0x84(r29)
 LAB_8019417c:
@@ -354,15 +354,15 @@ LAB_8019417c:
     lfs f1,0x38(r3)
     fcmpo cr0,f1,f0
     bge switchD_80193ffc_X_caseD_2
-    lhz r0,DAT_00000084(r29)
+    lhz r0,0x84(r29)
     ori r0,r0,0x4
     sth r0,0x84(r29)
     b switchD_80193ffc_X_caseD_2
 switchD_80193ffc_X_caseD_8:
-    lfs f1,DAT_0000002c(r29)
-    lfs f0,DAT_00000030(r29)
+    lfs f1,0x2c(r29)
+    lfs f0,0x30(r29)
     fmuls f2,f1,f1
-    lfs f3,DAT_00000034(r29)
+    lfs f3,0x34(r29)
     fmuls f1,f0,f0
     lfs f0,-0x5cf8(r2)	# = 0.0, op 1: FLOAT_804ee0c8
     fmuls f3,f3,f3
@@ -432,8 +432,8 @@ LAB_8019428c:
 LAB_8019429c:
     stfs f4,0x54(r29)
     lfs f0,-0x5cf8(r2)	# = 0.0, op 1: FLOAT_804ee0c8
-    lfs f2,DAT_0000002c(r29)
-    lfs f1,DAT_00000034(r29)
+    lfs f2,0x2c(r29)
+    lfs f1,0x34(r29)
     fmuls f2,f2,f2
     fmuls f1,f1,f1
     fadds f2,f2,f1
@@ -503,7 +503,7 @@ LAB_8019438c:
     lfs f0,-0x7cf0(r3)	# = 00800000h, op 1: DAT_804e8310
     fcmpo cr0,f2,f0
     bge LAB_801943c8
-    lfs f1,DAT_00000030(r29)
+    lfs f1,0x30(r29)
     lfs f0,-0x5cf8(r2)	# = 0.0, op 1: FLOAT_804ee0c8
     fcmpo cr0,f1,f0
     cror eq,gt,eq
@@ -516,18 +516,18 @@ LAB_801943bc:
     stfs f0,0x58(r29)
     b LAB_801943d8
 LAB_801943c8:
-    lfs f1,DAT_00000030(r29)
+    lfs f1,0x30(r29)
     bl FUN_800e6ab8
     frsp f0,f1
     stfs f0,0x58(r29)
 LAB_801943d8:
-    lfs f2,DAT_0000002c(r29)
+    lfs f2,0x2c(r29)
     lis r3,-0x7fb1
     lfs f0,-0x7cf0(r3)	# = 00800000h, op 1: DAT_804e8310
     fabs f1,f2
     fcmpo cr0,f1,f0
     bge LAB_8019441c
-    lfs f1,DAT_00000034(r29)
+    lfs f1,0x34(r29)
     lfs f0,-0x5cf8(r2)	# = 0.0, op 1: FLOAT_804ee0c8
     fcmpo cr0,f1,f0
     cror eq,gt,eq
@@ -540,7 +540,7 @@ LAB_80194410:
     stfs f0,0x60(r29)
     b LAB_8019442c
 LAB_8019441c:
-    lfs f1,DAT_00000034(r29)
+    lfs f1,0x34(r29)
     bl FUN_800e6ab8
     frsp f0,f1
     stfs f0,0x60(r29)
@@ -550,12 +550,12 @@ LAB_8019442c:
     lwzx r3,r3,r28
     lfs f1,0x30(r3)
     stfs f1,0x5c(r29)
-    lfs f1,DAT_0000005c(r29)
+    lfs f1,0x5c(r29)
     fcmpo cr0,f1,f0
     bge LAB_80194460
     fneg f0,f1
     stfs f0,0x5c(r29)
-    lfs f0,DAT_00000054(r29)
+    lfs f0,0x54(r29)
     fneg f0,f0
     stfs f0,0x54(r29)
 LAB_80194460:
@@ -575,7 +575,7 @@ switchD_80193ffc_X_caseD_2:
     lwz r0,0x4(r29)
     rlwinm. r0,r0,0x0,0xe,0xe
     beq LAB_801944cc
-    lhz r0,DAT_00000012(r29)
+    lhz r0,0x12(r29)
     mr r3,r29
     li r4,0x0
     ori r0,r0,0x800

@@ -50,7 +50,7 @@ LAB_80155a24:
     li r31,0x0
     b LAB_80155a38
 LAB_80155a34:
-    lha r31,DAT_00000002(r3)
+    lha r31,0x02(r3)
 LAB_80155a38:
     extsh. r0,r31
     ble LAB_80155a68

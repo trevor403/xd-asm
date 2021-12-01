@@ -58,7 +58,7 @@ LAB_8017c14c:
     beq LAB_8017c1a8
     b LAB_8017c180
 LAB_8017c170:
-    lfs f0,DAT_00000004(r8)
+    lfs f0,0x04(r8)
     fcmpo cr0,f0,f1
     blt LAB_8017c18c
     mr r8,r6

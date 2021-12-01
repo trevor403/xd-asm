@@ -22,7 +22,7 @@ LAB_80156058:
     li r3,0x0
     b LAB_8015606c
 LAB_80156068:
-    lha r3,DAT_00000002(r3)
+    lha r3,0x02(r3)
 LAB_8015606c:
     lwz r0,0x14(r1)	# stack
     mtspr LR,r0
